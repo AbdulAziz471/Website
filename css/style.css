@@ -74,10 +74,8 @@ header{
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-
-
-
 }
+
 .announcementBar {
     overflow: hidden;
     background-color: #f26527;
@@ -90,7 +88,7 @@ header{
     font-weight: lighter;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: 'Anton', sans-serif;
+    /* font-family: 'Anton', sans-serif; */
     color: white;
 }
 
@@ -98,7 +96,7 @@ header{
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    animation: marquee 10s linear infinite;
+    animation: marquee 20s linear infinite;
     padding-left: 60px;
     position: relative;
     gap: 50px;
@@ -1305,3 +1303,8 @@ width: 100%;
             justify-content: center;
         }
     }     
+
+
+
+
+

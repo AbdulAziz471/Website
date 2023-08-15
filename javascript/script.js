@@ -34,7 +34,7 @@ function decreaseCount(a, b) {
 function toggleElement(elementId, buttonId) {
   var x = document.getElementById(elementId);
   var button = document.getElementById(buttonId);
-  
+
   if (x.style.display === "none") {
     x.style.display = "block";
     button.innerHTML = "-";
@@ -46,61 +46,60 @@ function toggleElement(elementId, buttonId) {
 
 
 
-    const cardContainer = document.querySelector('.CARDS');
-    const pageNumbersContainer = document.querySelector('.page-numbers');
-    const cardsPerPage = 6;
-    let currentPage = 1;
+const cardContainer = document.querySelector('.CARDS');
+const pageNumbersContainer = document.querySelector('.page-numbers');
+const cardsPerPage = 6;
+let currentPage = 1;
 
-    function showPage(pageNumber) {
-        const startIndex = (pageNumber - 1) * cardsPerPage;
-        const endIndex = startIndex + cardsPerPage;
+function showPage(pageNumber) {
+  const startIndex = (pageNumber - 1) * cardsPerPage;
+  const endIndex = startIndex + cardsPerPage;
 
-        const cardItems = cardContainer.querySelectorAll('.card-item');
+  const cardItems = cardContainer.querySelectorAll('.card-item');
 
-        cardItems.forEach((card, index) => {
-            if (index >= startIndex && index < endIndex) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
+  cardItems.forEach((card, index) => {
+    if (index >= startIndex && index < endIndex) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
     }
+  });
+}
 
-    function updatePageNumbers() {
-        pageNumbersContainer.innerHTML = '';
+function updatePageNumbers() {
+  pageNumbersContainer.innerHTML = '';
 
-        const totalPages = Math.ceil(cardContainer.children.length / cardsPerPage);
+  const totalPages = Math.ceil(cardContainer.children.length / cardsPerPage);
 
-        for (let i = 1; i <= totalPages; i++) {
-            const pageNumberElement = document.createElement('li');
-            pageNumberElement.textContent = i;
-            pageNumberElement.classList.toggle('active', i === currentPage);
-            pageNumberElement.addEventListener('click', () => {
-                currentPage = i;
-                showPage(currentPage);
-                updatePageNumbers();
-            });
-            pageNumbersContainer.appendChild(pageNumberElement);
-        }
-    }
+  for (let i = 1; i <= totalPages; i++) {
+    const pageNumberElement = document.createElement('li');
+    pageNumberElement.textContent = i;
+    pageNumberElement.classList.toggle('active', i === currentPage);
+    pageNumberElement.addEventListener('click', () => {
+      currentPage = i;
+      showPage(currentPage);
+      updatePageNumbers();
+    });
+    pageNumbersContainer.appendChild(pageNumberElement);
+  }
+}
 
-    showPage(currentPage);
-    updatePageNumbers();
+showPage(currentPage);
+updatePageNumbers();
 
 
-    fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header').innerHTML = data;
-    })
-    .catch(error => console.error('Error fetching header:', error));
-    
-    
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    
+fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('header').innerHTML = data;
+  })
+  .catch(error => console.error('Error fetching header:', error));
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
