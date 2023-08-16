@@ -12,6 +12,25 @@ stars.forEach((star, index1) => {
   });
 });
 
+function opencart() {
+  document.getElementById("mySidepanel").style.width = "30%";
+
+}
+
+function closecart() {
+  document.getElementById("mySidepanel").style.width = "0";
+
+}
+const textareas = document.querySelectorAll(".Info textarea");
+
+textareas.forEach(textarea => {
+  textarea.addEventListener("input", function () {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
+  });
+});
+
+
 function increaseCount(a, b) {
   var input = b.previousElementSibling;
   var value = parseInt(input.value, 10);
@@ -98,6 +117,7 @@ fetch('header.html')
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
+
 }
 
 function closeNav() {

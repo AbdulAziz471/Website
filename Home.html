@@ -24,8 +24,9 @@
 
 
 
-    <header class="Fixed-Header">
-        <div class="announcementBar">
+    <header >
+
+        <div class="AnnouncementBar-Top">
             <p>SAVE 20% ON MONTHLY GORGIA SUSBSCRIPTIONS</p>
         </div>
 
@@ -49,9 +50,35 @@
                     <a href="Contact.html">
                         <li>CONTACT</li>
                     </a>
-
-
+                    
                 </nav>
+                <div class="Account">
+                    <div class="shoping-cart">
+                        <ul >
+                            <a  href="">
+                                <li  id="searchLink " >SEARCH</li>
+                            </a>
+                            <a  href="login.html">
+                                <li>ACCOUNT</li>
+                            </a>
+                            <img class="openbtn" onclick="opencart()"   src="img/shopping-cart.png" alt="">
+                            <div id="mySidepanel" class="sidepanel">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
+                                <div class="sideBar-cart">
+                                    <h4>YOUR CART IS EMPTY</h4>
+                                    <button>SIGN IN </button>
+                                    <a href="CreateAccount.html">CREATE ACCOUNT</a>
+                                    <a href="">MANAGE SUBSCRIPTIONS</a>
+                    
+                                </div>
+                              </div>
+                              
+                         </ul>
+                    </div>
+                    
+                </div>
+
+
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="Home.html">SHOP</a>
@@ -64,27 +91,19 @@
 
             </div>
             <span id="nav-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-            <div class="Account">
-                <ul>
-                    <a style="padding-right: 30px;" href="">
-                        <li id="searchLink " >SEARCH</li>
-                    </a>
-                    <a style="padding-right: 30px;" href="">
-                        <li>ACCOUNT</li>
-                    </a>
-                    <img src="img/shopping.png" alt="">
-                </ul>
-            </div>
+            
 
             
         </div>
         
     </header>
-   
+    <div style=" width: 100%;
+    height: 0.5px; 
+    background-color: rgb(224, 224, 224); "></div>
     <main>
 
         <div class="bannar-card">
-            <img src="img/alcohol-1961542_640.jpg" alt="">
+            <img src="img/sunset-1373171_1280.jpg" alt="">
             <div class="banner-text">
                 <h4>PINE APPLE. </h4>
                 <h4>UPBEET.</h4>
@@ -192,7 +211,7 @@
                         </div>
                         <button style="    background: white; border: 1px
                          solid #f26527;
-                        color: #f26527;">ADD TO CART</button>
+                        color: #f26527; margin-right: 30px;">ADD TO CART</button>
                         <button>SHOP NOW</button>
                     </div>
                 </div>
@@ -208,6 +227,8 @@
                         allah.I
                         love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love
                         allah.
+                    </p>
+                    <p style="padding-bottom: 30px;">
                         I love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love
                         allah.I
                         love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love
@@ -230,7 +251,7 @@
             </div>
         </div>
     </main>
-    <div class="announcementBar">
+    <!-- <div class="announcementBar">
         <div class="scrollingText">
             <p><span class="check-mark">&check;</span>NON GMO</p>
             <p><span class="check-mark">&check;</span>LOW CALORIE</p>
@@ -243,7 +264,7 @@
             <p><span class="check-mark">&check;</span>NON ASPARTAME</p>
             <p><span class="check-mark">&check;</span>GLUTEN FREE</p>
         </div>
-    </div>
+    </div> -->
     <footer>
         <div class="footer-content">
 
@@ -276,7 +297,7 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <a href=""><img src="img/tetralogicxlogo.PNG" alt=""></a>
+                <a href=""><img src="img/02_Home_MushRush_3.webp" alt=""></a>
                 <h3>Fellow Us!</h3>
                 <div class="footer-imgs">
                     <a href="#"><img src="img/facebook.png"></a>
