@@ -20,7 +20,20 @@
 
 
     <header>
+        <div class="search-bar">
+            <div id="myOverlay" class="overlay">
+                <form class="search-form" action="/action_page.php">
+                    <div style=" padding: 0; width: 70%; display: flex; flex-direction: row; border: 1px solid black;">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
 
+                    </div>
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                </form>
+
+            </div>
+
+        </div>
         <div class="AnnouncementBar-Top">
             <p>SAVE 20% ON MONTHLY GORGIA SUSBSCRIPTIONS</p>
         </div>
@@ -51,7 +64,7 @@
                     <div class="shoping-cart">
                         <ul>
                             <a href="">
-                                <li id="searchLink ">SEARCH</li>
+                                <li class="openBtn" onclick="openSearch()">SEARCH</li>
                             </a>
                             <a href="login.html">
                                 <li>ACCOUNT</li>
@@ -61,9 +74,9 @@
                                 <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
                                 <div class="sideBar-cart">
                                     <h1>YOUR CART IS EMPTY</h1>
-                                    <button  >Countinous Shopping</button> 
+                                    <button>Countinous Shopping</button>
                                     <h4>Have an account?</h4>
-                                    <a href="login.html">Login In <span>to check our faster</span>  </a>
+                                    <a href="login.html">Login In <span>to check our faster</span> </a>
 
                                 </div>
                             </div>
@@ -91,13 +104,15 @@
 
         </div>
 
+
+
     </header>
     <div style=" width: 100%;
     height: 0.5px; 
     background-color: rgb(224, 224, 224); "></div>
     <main>
         <div class="main-about">
-            <h4 > OUR STORY </h4>
+            <h4> OUR STORY </h4>
             <p>The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine
                 word of God, as revealed to the Prophet Muhammad (peace be upon him) over 1,400 years ago. It is written
                 in Arabic and is considered a literary masterpiece due to its eloquence and linguistic beauty. The Quran
@@ -118,7 +133,7 @@
                     <p>The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the
                         divine word of God, as revealed to the Prophet Muhammad (peace be upon him) over 1,400 years
                         ago. It is written in Arabic and is considered a literary masterpiece due to its eloquence and
-                        linguistic beauty. 
+                        linguistic beauty.
                     </p>
                     <img src="img/Sign.webp" alt="">
                     <p style="font-weight: bold; font-style: italic;">James Frank CEO</p>
@@ -131,10 +146,10 @@
                         linguistic beauty. The Quran is divided into chapters, known as Surahs, which vary in length and
                         cover a wide range of topics, including theology, morality, law, and guidance for personal
                         conduct. </p>
-                        <br>
-                        <p>The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the
-                            divine word of God, as revealed to the Prophet Muhammad (peace be upon him) over 1,400 years
-                            ago.  </p>
+                    <br>
+                    <p>The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the
+                        divine word of God, as revealed to the Prophet Muhammad (peace be upon him) over 1,400 years
+                        ago. </p>
                 </div>
             </div>
 

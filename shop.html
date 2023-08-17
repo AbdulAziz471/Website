@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,21 @@
 
 
 
-    <header >
+    <header>
+        <div class="search-bar">
+            <div id="myOverlay" class="overlay">
+                <form class="search-form" action="/action_page.php">
+                    <div style=" padding: 0; width: 70%; display: flex; flex-direction: row; border: 1px solid black;">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
 
+                    </div>
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                </form>
+
+            </div>
+
+        </div>
         <div class="AnnouncementBar-Top">
             <p>SAVE 20% ON MONTHLY GORGIA SUSBSCRIPTIONS</p>
         </div>
@@ -50,45 +63,32 @@
                     <a href="Contact.html">
                         <li>CONTACT</li>
                     </a>
-                    
+
                 </nav>
                 <div class="Account">
                     <div class="shoping-cart">
-                        <ul >
-                            <a  href="">
-                                <li  id="searchLink " >SEARCH</li>
-                            </a>    
-                                   
-                               
-                            
-                            <a  href="login.html">
+                        <ul>
+                            <a href="">
+                                <li class="openBtn" onclick="openSearch()">SEARCH</li>
+                            </a>
+                            <a href="login.html">
                                 <li>ACCOUNT</li>
                             </a>
-                            <img class="openbtn" onclick="opencart()"   src="img/shopping-cart.png" alt="">
+                            <img class="openbtn" onclick="opencart()" src="img/shopping-cart.png" alt="">
                             <div id="mySidepanel" class="sidepanel">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
                                 <div class="sideBar-cart">
-                                    <h4>YOUR CART IS EMPTY</h4>
-                                    <button>SIGN IN </button>
-                                    <a href="CreateAccount.html">CREATE ACCOUNT</a>
-                                    <a href="">MANAGE SUBSCRIPTIONS</a>
-                    
+                                    <h1>YOUR CART IS EMPTY</h1>
+                                    <button>Countinous Shopping</button>
+                                    <h4>Have an account?</h4>
+                                    <a href="login.html">Login In <span>to check our faster</span> </a>
+
                                 </div>
-                              </div>
-                              
-                        </ul>
-
-
-                        <div id="searchBar" class="search-bar">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
-                            <div class="search-bar">
-                                <input type="text" placeholder="Search...">
-                                <button id="closeButton">&#10005;</button>
                             </div>
-                        </div>
 
+                        </ul>
                     </div>
-                    
+
                 </div>
 
 
@@ -102,13 +102,15 @@
 
                 </div>
 
-            </div>  
+            </div>
             <span id="nav-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-            
 
-            
+
+
         </div>
-        
+
+
+
     </header>
     <div style=" width: 100%;
     height: 0.5px; 
@@ -120,7 +122,7 @@
             <h1>Home Page <span>&#8594;</span> </h1>
 
         </div>
-        
+
 
     </div>
 
