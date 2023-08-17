@@ -26,7 +26,20 @@
 
 
     <header>
+        <div class="search-bar">
+            <div id="myOverlay" class="overlay">
+                <form class="search-form" action="/action_page.php">
+                    <div style=" padding: 0; width: 70%; display: flex; flex-direction: row; border: 1px solid black;">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
 
+                    </div>
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                </form>
+
+            </div>
+
+        </div>
         <div class="AnnouncementBar-Top">
             <p>SAVE 20% ON MONTHLY GORGIA SUSBSCRIPTIONS</p>
         </div>
@@ -57,7 +70,7 @@
                     <div class="shoping-cart">
                         <ul>
                             <a href="">
-                                <li id="searchLink ">SEARCH</li>
+                                <li class="openBtn" onclick="openSearch()">SEARCH</li>
                             </a>
                             <a href="login.html">
                                 <li>ACCOUNT</li>
@@ -67,9 +80,9 @@
                                 <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
                                 <div class="sideBar-cart">
                                     <h1>YOUR CART IS EMPTY</h1>
-                                    <button  >Countinous Shopping</button> 
+                                    <button>Countinous Shopping</button>
                                     <h4>Have an account?</h4>
-                                    <a href="login.html">Login In <span>to check our faster</span>  </a>
+                                    <a href="login.html">Login In <span>to check our faster</span> </a>
 
                                 </div>
                             </div>
@@ -96,6 +109,8 @@
 
 
         </div>
+
+
 
     </header>
     <div style=" width: 100%;
@@ -215,7 +230,7 @@
                     <div class="SHOPNOW">
                         <div class="counter">
                             <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                            <input  type="text" value="1" readonly>
+                            <input type="text" value="1" readonly>
                             <span class="up" onClick='increaseCount(event, this)'>+</span>
                         </div>
                         <button style="    background: white; border: 1px
@@ -253,16 +268,16 @@
             <p> SHARE AND TAG <span>#DRINKMUSROOMS</span> MONTHLY GIVEAWAYS!</p>
             <div class="SocialImgs">
 
-            <img src="img/person1.jpg" alt="">
-                
-            <img src="img/person2.jpg" alt="">
-                
-            <img src="img/person3.jpg" alt="">
-                
-            <img src="img/person4.jpg" alt="">
-            
-            <img src="img/person5.jpg   " alt="">
-                    
+                <img src="img/person1.jpg" alt="">
+
+                <img src="img/person2.jpg" alt="">
+
+                <img src="img/person3.jpg" alt="">
+
+                <img src="img/person4.jpg" alt="">
+
+                <img src="img/person5.jpg   " alt="">
+
 
             </div>
         </div>
