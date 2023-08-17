@@ -1619,7 +1619,7 @@ main {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #ffab8796;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.4s;
     padding-top: 40px;
@@ -1991,3 +1991,11 @@ main {
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+
+
+
+
+
+
+
