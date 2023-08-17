@@ -21,6 +21,7 @@
 
 
     <header>
+
         <div class="AnnouncementBar-Top">
             <p>SAVE 20% ON MONTHLY GORGIA SUSBSCRIPTIONS</p>
         </div>
@@ -43,7 +44,7 @@
                         <li>FAQ'S</li>
                     </a>
                     <a href="Contact.html">
-                        <li>CONTACT US</li>
+                        <li>CONTACT</li>
                     </a>
 
                 </nav>
@@ -53,10 +54,21 @@
                             <a href="">
                                 <li id="searchLink ">SEARCH</li>
                             </a>
-                            <a href="">
+                            <a href="login.html">
                                 <li>ACCOUNT</li>
                             </a>
-                            <img src="img/shopping-cart.png" alt="">
+                            <img class="openbtn" onclick="opencart()" src="img/shopping-cart.png" alt="">
+                            <div id="mySidepanel" class="sidepanel">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
+                                <div class="sideBar-cart">
+                                    <h1>YOUR CART IS EMPTY</h1>
+                                    <button  >Countinous Shopping</button> 
+                                    <h4>Have an account?</h4>
+                                    <a href="login.html">Login In <span>to check our faster</span>  </a>
+
+                                </div>
+                            </div>
+
                         </ul>
                     </div>
 
