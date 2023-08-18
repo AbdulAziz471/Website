@@ -129,11 +129,12 @@ function changeImage(imageSource) {
   image.src = imageSource;
 }
 
-
-function openSearch() {
-  document.getElementById("myOverlay").style.display = "block";
+function openCustomSearch() {
+  var overlay = document.getElementById("customOverlay");
+  overlay.style.display = "flex"; // Change display to "flex"
 }
 
-function closeSearch() {
-  document.getElementById("myOverlay").style.display = "none";
+function closeCustomSearch() {
+  var overlay = document.getElementById("customOverlay");
+  overlay.style.display = "none"; // Change display to "none"
 }

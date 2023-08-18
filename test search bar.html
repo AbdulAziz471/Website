@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .custom-search-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .custom-overlay {
+            margin-top: 40px;
+            width: 100%;
+            display: none;
+            background-color: white;
+            justify-content: center;
+
+
+        }
+
+        .custom-search-form {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .custom-search-form button {
+            background-color: transparent;
+            border: none;
+            font-size: 25px;
+            font-weight: lighter;
+            /* font-weight: lighter; */
+            color: #777;
+        }
+
+
+
+        .custom-search-form span {
+            font-size: 50px;
+            padding-left: 20px;
+        }
+
+        .custom-search-form input {
+            width: 80%;
+            font-size: 30px;
+            border: none;
+            margin-right: 20px;
+            padding-left: 10px;
+            font-family: 'Saira Condensed', sans-serif;
+        }
+
+        .custom-search-form input:focus {
+            outline: none;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-search-bar">
+        <div id="customOverlay" class="custom-overlay">
+            <div class="custom-search-form" action="/action_page.php">
+                <div style="border: 1px solid rgb(113, 113, 113);">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+
+                </div>
+                <span class="custom-closebtn" onclick="closeCustomSearch()" title="Close Overlay">×</span>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="custom-search-link" onclick="openCustomSearch()">
+        <li>SEARCH</li>
+    </a>
+
+    <script>
+        function openCustomSearch() {
+            var overlay = document.getElementById("customOverlay");
+            overlay.style.display = "flex"; // Change display to "flex"
+        }
+
+        function closeCustomSearch() {
+            var overlay = document.getElementById("customOverlay");
+            overlay.style.display = "none"; // Change display to "none"
+        }
+    </script>
+</body>
+
+</html>
