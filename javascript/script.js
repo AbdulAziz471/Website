@@ -224,3 +224,18 @@ function closeCustomSearch() {
   var overlay = document.getElementById("customOverlay");
   overlay.style.display = "none"; // Change display to "none"
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

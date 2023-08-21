@@ -148,7 +148,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     padding-left: 30px;
     position: sticky;
@@ -156,10 +156,10 @@ header {
 }
 .head {
     padding-top: 10px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -2236,4 +2236,54 @@ padding-bottom: 50px;
     color: #474747;
     padding-bottom: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-shop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    }
+.left-shop-bar{
+    width: 30%;
+    background-color: #404040;
+}
+.center-shop-bar{
+    width: 50%;
+    background-color:#777;
+}
+.right-shop-bar{
+    background-color: #e6e6e6;
+    width: 20%
+}
+.Shop-bar{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
 
