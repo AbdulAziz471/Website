@@ -65,6 +65,55 @@ function toggleElement(elementId, buttonId) {
 
 
 const cardContainer = document.querySelector('.CARDS');
+
+const cardData = [
+    {
+        imgSrc: "img/example_small (1).jpg",
+        date: "JULLY 07 2023",
+        title: "CARD 1",
+        content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+        link: "#"
+    },
+    {
+      imgSrc: "img/example_small (1).jpg",
+      date: "JULLY 07 2023",
+      title: "CARD 2",
+      content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+      link: "#"
+  },
+  {
+    imgSrc: "img/example_small (1).jpg",
+    date: "JULLY 07 2023",
+    title: "CARD 3",
+    content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+    link: "#"
+},
+
+];
+
+function createCard(data) {
+    const card = document.createElement('div');
+    card.classList.add('card-item');
+
+    card.innerHTML = `
+        <img src="${data.imgSrc}" alt="">
+        <p><span>${data.date}</span></p>
+        <h4>${data.title}</h4>
+        <p>${data.content}</p>
+        <a href="${data.link}">READ MORE</a>
+    `;
+
+      cardContainer.appendChild(card);
+  }
+
+  // Loop through cardData and create cards
+  cardData.forEach(data => {
+      createCard(data);
+  });
+
+
+
+
 const pageNumbersContainer = document.querySelector('.page-numbers');
 const cardsPerPage = 6;
 let currentPage = 1;

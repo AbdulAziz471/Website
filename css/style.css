@@ -1426,11 +1426,14 @@ textarea:focus {
 }
 
 .card-item a {
-    padding-top: 50px
+    padding-top: 50px;
+ }
+.card-item a:hover{
+    border-bottom: 2px solid #f26527;
 }
 
 .card-item span {
-    color: #f26527;
+    color:#f26527;
 }
 
 .card-item p {
@@ -1500,6 +1503,7 @@ textarea:focus {
 
 .page-numbers li:first-child {
     margin-left: 0;
+
     /* Remove margin from the first page number */
 }
 
@@ -2134,3 +2138,62 @@ main {
     transform: scale(1.01);
     box-shadow:   10px 10px 10px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
+.blog{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.blog-contant{
+    padding-top: 40px;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-contant img{
+    width: 100%;
+    border: 2px solid rgb(92, 92, 92);
+}
+.blog-detail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.DETAILS{
+    width: 60%;
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+.DETAILS h4 {
+    font-size: 40px;
+    padding-bottom: 15px;
+
+}
+
+.DETAILS  a {
+    padding-top: 50px;
+    text-align: center;
+ }
+.DETAILS a:hover{
+    border-bottom: 2px solid #f26527;
+}
+
+.DETAILS span {
+    color:#f26527;
+}
+
+.DETAILS p {
+    font-family: 'Saira Condensed', sans-serif;
+    color: #474747;
+    padding-bottom: 60px;
+}
+
