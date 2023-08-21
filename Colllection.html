@@ -45,7 +45,10 @@
 
 
         <div class="head">
+            <span id="nav-btn" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
             <img src="img/7516_Mush_Rush_Logo-1.png" alt="">
+
             <div class="navbar">
                 <nav>
                     <a href="Home.html">
@@ -65,33 +68,6 @@
                     </a>
 
                 </nav>
-                <div class="Account">
-                    <div class="shoping-cart">
-                        <ul>
-                            <a href="#" class="custom-search-link" onclick="openCustomSearch()">
-                                <li>SEARCH</li>
-                            </a>
-                            <a href=" login.html">
-                                <li>ACCOUNT</li>
-                            </a>
-                            <img class="openbtn" onclick="opencart()" src="img/shopping-cart.png" alt="">
-                            <div id="mySidepanel" class="sidepanel">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
-                                <div class="sideBar-cart">
-                                    <h1>YOUR CART IS EMPTY</h1>
-                                    <button>Countinous Shopping</button>
-                                    <h4>Have an account?</h4>
-                                    <a href="login.html">Login In <span>to check our faster</span> </a>
-
-                                </div>
-                            </div>
-
-                        </ul>
-                    </div>
-
-                </div>
-
-
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="Home.html">SHOP</a>
@@ -103,13 +79,39 @@
                 </div>
 
             </div>
-            <span id="nav-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <div class="Account">
+                <div class="shoping-cart">
+                    <ul>
+                        <a href="#" class="custom-search-link" onclick="openCustomSearch()">
+                            <li class="navigation-item">SEARCH</li>
+                            <img src="img/search-icon.png" alt="" id="icons1">
+                        </a>
+                        <a href=" login.html">
+                            <li class="navigation-item">ACCOUNT</li>
+                            <img src="img/user-icon.png" alt="" id="icons2">
+                        </a>
+                        <img id="cart" class="openbtn" onclick="opencart()" src="img/shopping-cart.png" alt="">
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
+                            <div class="sideBar-cart">
+                                <h1>YOUR CART IS EMPTY</h1>
+                                <button>Countinous Shopping</button>
+                                <h4>Have an account?</h4>
+                                <a href="login.html">Login In <span>to check our faster</span> </a>
+
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+
+            </div>
+
+
 
 
 
         </div>
-
-
 
     </header>
     <div style=" width: 100%;

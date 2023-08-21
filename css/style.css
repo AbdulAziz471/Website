@@ -154,7 +154,6 @@ header {
     position: sticky;
 
 }
-
 .head {
     padding-top: 10px;
     width: 100%;
@@ -164,11 +163,15 @@ header {
     align-items: center;
 
 }
+#cart{
+    width: 35px;
+}
+/* 
 
 .head img {
     padding-left: 30px;
     width: 8%;
-    /* height: 70px; */
+   
 }
 
 .head nav li {
@@ -180,7 +183,7 @@ header {
     flex-direction: row;
 
 
-}
+} */
 
 ul {
     width: 90%;
@@ -475,7 +478,7 @@ ul a {
     }
 
     .contact h1 {
-        font-size: 25px;
+        font-size: 20px;
         padding-bottom: 20px;
     }
 
@@ -515,12 +518,13 @@ ul a {
 
     }
 
-    .contact h1 {
+    .contact h4 {
         font-size: 20px;
         padding-bottom: 10px;
     }
 
     .contact p {
+        font-size: 15px;
         text-align: center;
         padding-bottom: 15px;
     }
@@ -602,20 +606,20 @@ ul a {
 
     .product {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+        justify-content: left;
+        /* align-items: center; */
         width: 100%;
         margin-top: 30px;
 
 
-        background-color: #e1d4f3;
+      
         margin-bottom: 20px;
 
     }
 
     .product-img {
-        height: auto;
+       height: auto;
 
     }
 
@@ -1498,27 +1502,22 @@ textarea:focus {
 
 .page-numbers li:last-child {
     margin-right: 0;
-    /* Remove margin from the last page number */
 }
 
 .page-numbers li:first-child {
     margin-left: 0;
 
-    /* Remove margin from the first page number */
 }
 
 .page-numbers li:last-child,
 .page-numbers li:first-child {
     cursor: default;
-    /* Disable cursor for ellipsis elements */
 }
 
 .page-numbers li:first-child::before,
 .page-numbers li:last-child::after {
     content: '';
-    /* Display ellipsis content */
     margin: 0 2px;
-    /* Adjust spacing around ellipsis */
 }
 
 
@@ -1650,14 +1649,31 @@ main {
     }
 }
 
+
+@media screen and (max-width:750px){
+    .Account{
+        font-size: 10px;
+    }
+    .Account img{
+        }
+    #cart{
+        width: 20px;
+        height: 30px;
+    
+
+    }
+    
+    .shoping-cart {
+        display: block;
+
+        justify-content: right;
+    }
+   
+}
 @media screen and (max-width:1000px) {
+
     .head .navbar li {
         margin: 0px 10px;
-    }
-
-    .shoping-cart {
-        width: 50%;
-        justify-content: right;
     }
 
     .Account ul a {
@@ -1667,11 +1683,6 @@ main {
 
 .Account ul li {
     color: #474747;
-}
-
-.Account img {
-    width: 5%;
-    height: 100%;
 }
 
 @media screen and (max-width: 750px) {
@@ -1686,6 +1697,7 @@ main {
     }
 
     #nav-btn {
+
         display: block;
     }
 
@@ -1694,13 +1706,14 @@ main {
 @media screen and (max-width: 750px) {
 
     .head {
-        width: 90%;
-        justify-content: center;
+        width: 100%;
+        justify-content: space-evenly   ;
 
     }
 
     .head img {
-        width: 10px;
+        width: 60px;
+        height:60px;
 
     }
 
@@ -1714,8 +1727,35 @@ main {
     }
 }
 
-@media screen and (max-width: 1000px) {
+#icons1 {
+    display: none;
+}
+#icons2{
 
+    display: none;
+}
+@media screen and (max-width: 750px){
+    #icons1{
+        display:block;
+        width: 25px;
+        height: 25px;
+        padding-right: 20px;
+        
+    } #icons2{
+        display:block;
+        width: 25px;
+        height: 25px;
+        padding-right: 20px;
+          
+    }
+    .navigation-item{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    
     /* For screen widths 751px and above */
     .CARDS {
         grid-template-columns: repeat(2, 1fr);

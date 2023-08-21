@@ -65,29 +65,67 @@ function toggleElement(elementId, buttonId) {
 
 
 const cardContainer = document.querySelector('.CARDS');
-
 const cardData = [
     {
+      id: 1 ,
         imgSrc: "img/example_small (1).jpg",
         date: "JULLY 07 2023",
         title: "CARD 1",
         content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-        link: "#"
+        link: "card-details.html?id=1"
     },
     {
+      id : 2,
       imgSrc: "img/example_small (1).jpg",
       date: "JULLY 07 2023",
       title: "CARD 2",
       content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-      link: "#"
+      link: "card-details.html?id=2"
   },
   {
+    id: 3, 
     imgSrc: "img/example_small (1).jpg",
     date: "JULLY 07 2023",
     title: "CARD 3",
     content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-    link: "#"
+    link: "card-details.html?id=1"
 },
+{
+  id: 4, 
+  imgSrc: "img/example_small (1).jpg",
+  date: "JULLY 07 2023",
+  title: "CARD 3",
+  content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+  link: "card-details.html?id=1"
+},
+{
+  id: 5, 
+  imgSrc: "img/example_small (1).jpg",
+  date: "JULLY 07 2023",
+  title: "CARD 3",
+  content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+  link: "card-details.html?id=1"
+},
+{
+  id: 6, 
+  imgSrc: "img/example_small (1).jpg",
+  date: "JULLY 07 2023",
+  title: "CARD 3",
+  content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+  link: "card-details.html?id=1"
+},
+{
+  id: 7, 
+  imgSrc: "img/example_small (1).jpg",
+  date: "JULLY 07 2023",
+  title: "CARD 3",
+  content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+  link: "card-details.html?id=1"
+},
+
+
+
+
 
 ];
 
@@ -110,7 +148,6 @@ function createCard(data) {
   cardData.forEach(data => {
       createCard(data);
   });
-
 
 
 
