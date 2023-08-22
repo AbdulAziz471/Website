@@ -293,7 +293,7 @@ ul a {
 }
 
 .banner-text {
-    /* width: 50%; */
+    width: 50%;
     position: absolute;
     top: 20%;
     left: 10%;
@@ -301,11 +301,16 @@ ul a {
     font-size: 50px;
     font-family: "Ohno Blazeface 12 Point";
 }
+.banner-text h4{
+    padding: 0;
+    font-size: 60px;
+}
 
 .banner-text p {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 30px;
-    font-weight: bold;
+    /* font-weight: bold; */
+    color: #4d4057;
 }
 
 @media screen and (max-width: 1000px) {
@@ -346,9 +351,12 @@ ul a {
 
 .banner-text-2 p {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: white;
+}
+.banner-text-2 h4{
+    font-size: 65px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1670,7 +1678,10 @@ main {
 
         justify-content: right;
     }
-   
+    
+}
+.shoping-cart ul li{
+        padding-right: 10px;    
 }
 @media screen and (max-width:1000px) {
 
