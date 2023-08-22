@@ -1534,12 +1534,14 @@ textarea:focus {
 .head .navbar {
     display: flex;
     align-items: center;
+    color: #4d4057;
 }
 
 .head nav {
     align-items: center;
     display: flex;
     flex-direction: row;
+    color: #4d4057;
 }
 
 .head nav li {
@@ -1552,7 +1554,7 @@ textarea:focus {
 .head nav a {
 
     font-size: 15px;
-    color: black;
+    color: #4d4057;
     text-decoration: none;
     transition: box-shadow 0.3s ease;
 }
@@ -2287,3 +2289,48 @@ padding-bottom: 50px;
 
 
 
+
+
+
+
+
+
+.card-box{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+
+    justify-content: center;
+
+}
+
+.card-detail{
+    width: 80%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+}
+.card-detail img{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.card-info{
+    width:100%;
+    padding-bottom: 70px;
+
+}
+.card-info span{
+    color: #f26527;
+}
+.card-info h1{
+    font-size: 50px;
+}
+.card-info p{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    padding-bottom: 40px;
+    color: #777777;
+
+}

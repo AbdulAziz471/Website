@@ -64,90 +64,58 @@ function toggleElement(elementId, buttonId) {
 
 
 
+
+
 const cardContainer = document.querySelector('.CARDS');
-const cardData = [
-    {
-      id: 1 ,
-        imgSrc: "img/example_small (1).jpg",
-        date: "JULLY 07 2023",
-        title: "CARD 1",
-        content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-        link: "card-details.html?id=1"
-    },
-    {
-      id : 2,
-      imgSrc: "img/example_small (1).jpg",
-      date: "JULLY 07 2023",
-      title: "CARD 2",
-      content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-      link: "card-details.html?id=2"
-  },
-  {
-    id: 3, 
-    imgSrc: "img/example_small (1).jpg",
-    date: "JULLY 07 2023",
-    title: "CARD 3",
-    content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-    link: "card-details.html?id=1"
-},
-{
-  id: 4, 
-  imgSrc: "img/example_small (1).jpg",
-  date: "JULLY 07 2023",
-  title: "CARD 3",
-  content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-  link: "card-details.html?id=1"
-},
-{
-  id: 5, 
-  imgSrc: "img/example_small (1).jpg",
-  date: "JULLY 07 2023",
-  title: "CARD 3",
-  content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-  link: "card-details.html?id=1"
-},
-{
-  id: 6, 
-  imgSrc: "img/example_small (1).jpg",
-  date: "JULLY 07 2023",
-  title: "CARD 3",
-  content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-  link: "card-details.html?id=1"
-},
-{
-  id: 7, 
-  imgSrc: "img/example_small (1).jpg",
-  date: "JULLY 07 2023",
-  title: "CARD 3",
-  content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
-  link: "card-details.html?id=1"
-},
+        const cardData = [
+
+          {
+            id: 1,
+            imgSrc: "img/02_Home_MushRush_9.webp",
+            date: "JULLY 07 2023",
+            title: "CARD 1",
+            content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+            link: "card-details.html?id=1"
+          },
+          {
+            id: 2,
+            imgSrc: "img/02_Home_MushRush_9.webp",
+            date: "JULLY 07 2023",
+            title: "CARD 2",
+            content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
+            link: "card-details.html?id=2"
+          },
+          
+                  ];
+
+        function createCard(data) {
+            const card = document.createElement('div');
+            card.classList.add('card-item');
+
+            card.innerHTML = `
+                <img src="${data.imgSrc}" alt="">
+                <p><span>${data.date}</span></p>
+                <h4>${data.title}</h4>
+                <p>${data.content}</p>
+                <a href="${data.link}">READ MORE</a>
+            `;
+
+            cardContainer.appendChild(card);
+        }
+
+        // Loop through cardData and create cards
+        cardData.forEach(data => {
+            createCard(data);
+        });
+    
 
 
 
 
 
-];
 
-function createCard(data) {
-    const card = document.createElement('div');
-    card.classList.add('card-item');
 
-    card.innerHTML = `
-        <img src="${data.imgSrc}" alt="">
-        <p><span>${data.date}</span></p>
-        <h4>${data.title}</h4>
-        <p>${data.content}</p>
-        <a href="${data.link}">READ MORE</a>
-    `;
 
-      cardContainer.appendChild(card);
-  }
-
-  // Loop through cardData and create cards
-  cardData.forEach(data => {
-      createCard(data);
-  });
 
 
 
