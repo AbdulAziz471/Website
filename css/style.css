@@ -2162,7 +2162,7 @@ main {
 .DETAILS {
     width: 60%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
 }
 
@@ -2754,12 +2754,21 @@ main {
 
 details {
     margin: 10px;
+
+
 }
+
+
 
 summary {
     cursor: pointer;
     position: relative;
     padding-bottom: 20px;
+
+}
+
+summary:hover {
+    text-decoration: underline;
 }
 
 #ava {
@@ -2779,7 +2788,23 @@ summary {
     flex-direction: column;
     column-gap: 10px;
     max-width: 400px;
+
 }
+
+.radio-container,
+.range {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+details[open] .radio-container,
+details[open] .range {
+    max-height: 100px;
+    /* Adjust the height as needed */
+    transition: max-height 0.3s ease-in-out;
+}
+
 
 .radio-container label {
     padding-top: 20px;
@@ -2807,5 +2832,33 @@ summary {
 .radio-container input[type="radio"]:checked {
 
     background-color: #1c282f;
+
+}
+
+
+
+
+
+
+
+
+
+
+.range-price input {
+    width: 70px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px 10px 0px 0px;
+
+    font-size: 15px;
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+.range-price p {
+    font-family: 'Rajdhani', sans-serif;
+    color: #a1a1a1;
+    font-weight: lighter;
 
 }
