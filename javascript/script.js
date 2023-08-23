@@ -207,3 +207,21 @@ function closeCustomSearch() {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const productCards = document.querySelectorAll('.card');
+
+  productCards.forEach(card => {
+      const imgContainer = card.querySelector('.PRODUCT-IMG');
+      const img = imgContainer.querySelector('img');
+      const originalSrc = img.src;
+      const hoverSrc = img.getAttribute('data-hover');
+
+      card.addEventListener('mouseenter', () => {
+          img.src = hoverSrc;
+      });
+
+      card.addEventListener('mouseleave', () => {
+          img.src = originalSrc;
+      });
+  });
+});

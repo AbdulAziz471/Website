@@ -112,26 +112,94 @@
     height: 0.5px; 
     background-color: rgb(224, 224, 224); "></div>
 
-    <div class="announcementBar">
-        <div class="scrollingText">
-            <p><span class="check-mark">&check;</span>NON GMO</p>
-            <p><span class="check-mark">&check;</span>LOW CALORIE</p>
-            <p><span class="check-mark">&check;</span>VEGAN</p>
-            <p><span class="check-mark">&check;</span>NON ASPARTAME</p>
-            <p><span class="check-mark">&check;</span>GLUTEN FREE</p>
-            <p><span class="check-mark">&check;</span>NON GMO</p>
-            <p><span class="check-mark">&check;</span>LOW CALORIE</p>
-            <p><span class="check-mark">&check;</span>VEGAN</p>
-            <p><span class="check-mark">&check;</span>NON ASPARTAME</p>
-            <p><span class="check-mark">&check;</span>GLUTEN FREE</p>
-        </div>
-    </div>
-    <div class="product-main">
-        <div class="product">
-            
+    <div class="Collection-Items-main">
+        <div class="Collection-Items-sub">
+            <h1>Product</h1>
+
+            <div class="dropdown">
+                <span>Short By:</span>
+                <button onclick="myFunction()" class="dropbtn">Best Selling </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <span>2 products</span>
+            </div>
+
+            <div class="Collection-bars">
+
+                <div class="Collection-right-bar">
+                    <p style="padding-bottom: 15px;">Filter:</p>
+                    <div style=" width: 100%; height: 0.5px; background-color: rgb(224, 224, 224); ">
+                    </div>
+                    <details>
+                        <summary>
+
+                            <span id="ava">Availability</a></span>
+
+
+                        </summary>
+                        <div style=" width: 100%; height: 0.5px; background-color: rgb(224, 224, 224); ">
+                        </div>
+                        <div class="radio-container">
+                            <label>
+                                <input type="radio" name="option" value="option1"> In Stock (2)
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="option2"> Out Of Stock
+                            </label>
+
+                        </div>
+                    </details>
+                    <details>
+                        <summary>
+                            <span id="ava" style="padding-bottom: 15px;">Price</span>
+
+                            <div style=" width: 100%; height: 0.5px; background-color: rgb(224, 224, 224); ">
+                            </div>
+                        </summary>
+                        <div class=" radio-container">
+                        </div>
+                    </details>
+
+
+                </div>
+                <div class="Collection-main-bar">
+
+                    <div class="card">
+                        <div class="PRODUCT-IMG">
+                            <img src="img/03-PDP_MushRush.webp" alt="Product 1" data-original="img/03-PDP_MushRush.webp"
+                                data-hover="img/02_Home_MushRush_13.webp">
+                        </div>
+                        <h2>Product 1</h2>
+                        <p>Description of Product 1.</p>
+                        <span>
+                            <p>Price: $19.99</p>
+                        </span>
+                    </div>
+                    <div class="card">
+                        <div class="PRODUCT-IMG">
+                            <img src="img/02_Home_MushRush_13.webp" alt="Product 1"
+                                data-original="img/02_Home_MushRush_13.webp" data-hover="img/03-PDP_MushRush.webp">
+                        </div>
+                        <h2>Product 2</h2>
+                        <p>Description of Product 2.</p>
+                        <span>
+                            <p>Price: $19.99</p>
+                        </span>
+
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
 
     </div>
+
+
     <footer>
         <div class="footer-content">
 
@@ -177,11 +245,53 @@
         </div>
         <p>&copy; 2023 Drink Mush Rush All rights reserved.</p>
 
-        </div>
+
 
 
     </footer>
-    <script src="javascript/script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const productCards = document.querySelectorAll('.card');
+
+            productCards.forEach(card => {
+                const imgContainer = card.querySelector('.PRODUCT-IMG');
+                const img = imgContainer.querySelector('img');
+                const originalSrc = img.src;
+                const hoverSrc = img.getAttribute('data-hover');
+
+                card.addEventListener('mouseenter', () => {
+                    img.src = hoverSrc;
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    img.src = originalSrc;
+                });
+            });
+        });
+
+
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+    </script>
 </body>
 
 </html>
