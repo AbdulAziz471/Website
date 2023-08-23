@@ -112,50 +112,139 @@
     height: 0.5px; 
     background-color: rgb(224, 224, 224); "></div>
 
-    <div class="Collection-Items-main">
-        <div class="Collection-Items-sub">
-            <div class="product-img">
-                <img id="image" src="img/03-PDP_MushRush.webp" alt="">
+
+
+
+    <div class="upbeet">
+
+        <div class="upbeet-variant">
+            <div class="upbeet-variant-img">
+                <button class="Variant-btn" onclick="changeImage('img/03-PDP_MushRush.webp')">
+                    <img src="img/03-PDP_MushRush.webp">
+                </button>
             </div>
+            <div class=" upbeet-variant-img">
+                <button class="Variant-btn" onclick="changeImage('img/img2.png')">
+                    <img src="img/img2.png" alt="">
+                </button>
+            </div>
+            <div class="upbeet-variant-img">
+                <button class="Variant-btn" onclick="changeImage('img/img3.webp')">
+                    <img src="img/img3.webp" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="upbeet-main-prod">
+            <div class="Pro-img">
+                <img id="Pro-image" src="img/03-PDP_MushRush.webp" alt="">
 
+            </div>
+        </div>
+        <div class="upbeet-discription">
+            <div style="padding: 40px 20px 20px 20px;">
+                <h1> UPBEET 2
+                </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                </p>
+                <div style=" width: 100%;
+                height: 0.5px; 
+                background-color: rgb(224, 224, 224); margin-bottom: 15px; "></div>
+                <span> <a href="">Shipping </a> Calculated at check out.</span>
+                <h4>Purchase Options</h4>
+                <div class="radio">
+                    <input type="radio" class="radio-input" name="purchase-option" id="option1">
+                    <label class="radio-label" for="option1">One-time purchase $25.00</label>
 
-            <div class="Collection-bars">
+                    <input type="radio" class="radio-input" name="purchase-option" id="option2">
+                    <label class="radio-label" for="option2">Subscribe & save 20%</label>
+                </div>
+                <h1> $25.00
+                </h1>
 
-
-                <div class="Collection-main-bar">
-
-                    <div class="card">
-                        <div class="PRODUCT-VARIANT">
-                            <button class="icon-button" onclick="changeImage('img/03-PDP_MushRush.webp')">
-                                <img class="icon" src="img/03-PDP_MushRush.webp" alt="Icon 1">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="PRODUCT-VARIANT">
-                            <button class="icon-button" onclick="changeImage('img/img2.png')">
-                                <img class="icon" src="img/02_Home_MushRush_13.webp" alt="Product 2">
-                            </button>
-                        </div>
-
-                    </div>
-                    <div class="card">
-                        <div class="PRODUCT-VARIANT">
-                            <button class="icon-button" onclick="changeImage('img/img3.webp')">
-                                <img class="icon" src="img/img3.webp" alt="Product 2">
-                            </button>
-                        </div>
-
-                    </div>
-
-
+                <div class="counter">
+                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="1" readonly>
+                    <span class="up" onClick='increaseCount(event, this)'>+</span>
                 </div>
             </div>
+            <button style=" margin-left: 20px;">ADD TO CART</button>
+            <button style=" margin-left: 20px;   background:transparent; border: 1px
+            solid #f26527;
+           color: #f26527; margin-right: 30px;">SHOP NOW</button>
 
         </div>
 
+
+    </div>
+    <div class="Product-Checkout">
+        <p><a href="#description">Description</a></p>
+        <p><a href="#ingredients">Ingredients</a></p>
+        <p><a href="#reviews">Customer Reviews</a></p>
     </div>
 
+    <div id="description" class="content">
+        <p>Description content goes here.</p>
+        <div class="Pro-img">
+            <img id="Pro-image" src="img/03-PDP_MushRush.webp" alt="">
+
+        </div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+        </p>
+    </div>
+    <div id="ingredients" class="content">
+        <p>Ingredients content goes here.</p>
+    </div>
+    <div id="reviews" class="content">
+        <p>Customer Reviews content goes here.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div>
+        <div class="card-variant-discription">
+            <div class="card-variant">
+                <div class="PRODUCT-VARIANT">
+                    <button class="variant-btn
+                    " onclick="changeImage('img/03-PDP_MushRush.webp')">
+                        <img class="Variant-img" src="img/03-PDP_MushRush.webp" alt="Icon 1">
+                    </button>
+                </div>
+                <div class="PRODUCT-VARIANT">
+                    <button class="Variant-btn" onclick="changeImage('img/img2.png')">
+                        <img class="Variant-img" src="img/02_Home_MushRush_13.webp" alt="Product 2">
+                    </button>
+                </div>
+                <div class="PRODUCT-VARIANT">
+                    <button class="Variant-btn" onclick="changeImage('img/img3.webp')">
+                        <img class="Variant-img" src="img/img3.webp" alt="Product 2">
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <div class="Pro-img">
+            <img id="image" src="img/03-PDP_MushRush.webp" alt="">
+        </div>
+
+    </div> -->
 
     <footer>
         <div class="footer-content">

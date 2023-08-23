@@ -941,6 +941,7 @@ footer p {
     border: 1px solid #f26527;
     border-radius: 20px;
     background: white;
+    text-align: center;
 
 }
 
@@ -2830,9 +2831,7 @@ details[open] .range {
 }
 
 .radio-container input[type="radio"]:checked {
-
     background-color: #1c282f;
-
 }
 
 
@@ -2861,4 +2860,270 @@ details[open] .range {
     color: #a1a1a1;
     font-weight: lighter;
 
+}
+
+/* 
+.PRODUCT-VARIANT {
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: #fdf5f1;
+    border-radius: 10px;
+    transition: transform 0.5s, filter 0.2s;
+
+} */
+
+/* .PRODUCT-VARIANT img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+} */
+
+/* .Pro-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 50%;
+    padding-bottom: 0%;
+    position: relative;
+    overflow: hidden;
+    height: 0px;
+    border-radius: 10px;
+    transition: transform 0.5s, filter 0.2s;
+
+}
+
+.Pro-img img {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+
+}
+
+.card-variant {
+    display: flex;
+    flex-direction: row;
+} */
+
+
+
+
+
+
+
+
+
+.upbeet {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    justify-self: center;
+    margin: 50px auto;
+
+}
+
+.upbeet-variant {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 10%;
+    padding-left: 40px;
+
+}
+
+
+
+.upbeet-variant-img {
+    padding-top: 100%;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    border: 1px solid #e4e4e4;
+}
+
+
+.Variant-btn {
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.3s;
+}
+
+
+.Variant-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Variant-btn:focus {
+    outline: none;
+}
+
+
+
+.Variant-btn:hover {
+    background-color: #fdf5f1;
+
+}
+
+
+.upbeet-variant-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+
+}
+
+.upbeet-main-prod {
+    flex: 1;
+}
+
+
+
+.Pro-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 65%;
+    padding-bottom: 0%;
+    position: relative;
+    overflow: hidden;
+    height: 0px;
+    border-radius: 10px;
+    transition: transform 0.5s, filter 0.2s;
+
+}
+
+.Pro-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+
+}
+
+.upbeet-discription {
+    width: 40%;
+    background-color: #fdf5f1;
+}
+
+.upbeet-discription button {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.upbeet-discription h1 {
+    font-size: 40px;
+}
+
+.upbeet-discription p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    word-spacing: 5px;
+    color: #777;
+    padding-bottom: 15px;
+}
+
+.upbeet-discription a {
+
+    color: black;
+    font-family: 'Saira Condensed', sans-serif;
+    text-decoration: underline;
+}
+
+.upbeet-discription a:hover {
+    color: #f26527;
+}
+
+.upbeet-discription Span {
+    /* padding-top: 15px; */
+    font-family: 'Saira Condensed', sans-serif;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.radio {
+    display: flex;
+    justify-content: left;
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-label {
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 900;
+    font-weight: bolder;
+}
+
+.radio-input:checked+.radio-label {
+    border: 2px solid #f26527;
+}
+
+.Product-Checkout {
+    overflow: hidden;
+    background-color: #f26527;
+    font-family: "Ohno blazeface 12 Point";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* font-family: 'Anton', sans-serif; */
+    color: white;
+}
+
+
+.content {
+    display: none;
+    border-top: 2px solid transparent;
+    /* Add a transparent border initially */
+}
+
+.content:target {
+    display: block;
+    width: 100%;
+}
+
+.Product-Checkout p a {
+    padding-left: 50px;
+    color: white;
+    font-family: "Ohno blazeface 12 Point";
+    font-weight: lighter;
+}
+
+.Product-Checkout p a:target {
+    text-decoration: underline;
 }
