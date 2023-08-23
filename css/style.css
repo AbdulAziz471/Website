@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Saira+Condensed:wght@300&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
@@ -288,7 +290,7 @@ ul a {
 
 .bannar-card img {
     width: 100%;
-    height: 650px;
+    /* height: 650px; */
 
 }
 
@@ -312,18 +314,21 @@ ul a {
     /* font-weight: bold; */
     color: #4d4057;
 }
-
+/* 
 @media screen and (max-width: 1000px) {
-    .banner-text {
-        font-size: 40px;
-
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .banner-text {
+    .banner-text  {
         font-size: 30px;
 
+    }
+} */
+
+@media screen and (max-width: 750px) {
+    .banner-text  h4{
+        font-size: 30px;
+
+    }
+    .banner-text p{
+        font-size: 15px;
     }
 }
 
@@ -334,14 +339,12 @@ ul a {
 }
 
 .bannar-card-2 img {
-    width: 100%;
-    height: 650px;
+    width: 100%;   
 }
-
 .banner-text-2 {
     width: 50%;
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 10%;
     font-size: 30px;
 
@@ -360,17 +363,14 @@ ul a {
     font-weight: bolder;
 }
 
-@media screen and (max-width: 1000px) {
-    .banner-text-2 {
-        font-size: 40px;
-
-    }
-}
 
 @media screen and (max-width: 750px) {
-    .banner-text-2 {
+    .banner-text-2  h4 {
         font-size: 30px;
 
+    }
+    .banner-text-2 p{
+        font-size: 15px;
     }
 }
 
@@ -418,7 +418,7 @@ ul a {
     font-family: 'Saira Condensed', sans-serif;
 }
 
-.about-banner h1 {
+.about-banner h4{
     font-weight: bold;
     font-size: 50px;
     text-align: center;
@@ -428,6 +428,10 @@ ul a {
     .about-banner p {
         font: 15px;
         padding: 50px;
+
+    }
+    .about-banner h4 {
+        font-size: 15px;
     }
 }
 
@@ -797,6 +801,7 @@ ul a {
     
 }
 .SocialImgs img {
+    height: auto;
     transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
   }
 .SocialImgs img:hover{
@@ -804,18 +809,6 @@ ul a {
 }
 
   
-
-@media screen and (max-width: 750px) {
-    .SocialImgs {
-        width: 40%;
-        flex-direction: column;
-    }
-
-    .SocialImgs img {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
 
 .SocialImgs img {
     border-radius: 20px;
@@ -969,105 +962,10 @@ footer p {
     word-spacing: 10px;
 }
 
-.about-imgs {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    /* margin: 20px 0px 30px 20px; */
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.main-about {
-    padding: 30px 90px 30px 90px;
-
-}
-
-.main-about h4 {
-    width: 80%;
-    text-align: left;
-    /* font-style: italic; */
-    font-size: 50px;
-    font-family: "Ohno Blazeface 12 Point";
-
-}
-
-.main-about p {
-    font-size: 20px;
-    word-spacing: 10px;
-    font-family: 'Saira Condensed', sans-serif;
-    color: #474747;
-}
-
-@media screen and (max-width: 750px) {
-    .main-about {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .main-about h1 {
-        font-size: 30px;
-        padding: 20px 0 40px 0;
-    }
-}
-
-.about-imgs {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    /* margin: 20px 0px 30px 20px; */
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.about-imgs img {
-
-    width: 45%;
-    height: auto;
-    border-radius: 20px;
-}
-
-.about-imgs-text {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: top;
-    text-align: left;
-    padding-bottom: 100px;
-
-}
-
-.text1 {
-    font-family: monospace;
-    font-style: italic;
-    width: 47%;
-}
-
-.text1 img {
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-
-.text1 h1 {
-    font-weight: bolder;
-    padding: 10px 0 30px 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\;
-}
-
 .text h2 {
     font-weight: bolder;
     padding: 10px 0 30px 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.text2 {
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-    width: 47%;
 }
 
 .research {
@@ -1650,11 +1548,7 @@ main {
         flex-direction: column;
     }
 
-    .research-img img {
-
-        height: 300px;
-    }
-
+ 
     .research-img {
         width: auto;
     }
@@ -1665,8 +1559,7 @@ main {
     .Account{
         font-size: 10px;
     }
-    .Account img{
-        }
+ 
     #cart{
         width: 20px;
         height: 30px;
@@ -1727,7 +1620,7 @@ main {
 
     .head img {
         width: 60px;
-        height:60px;
+        /* height:60px; */
 
     }
 
@@ -1813,19 +1706,24 @@ main {
 }
 
 @media screen and (max-width: 750px) {
+    .banner{
+        text-align: left;
+    }
     .about-banner {
-        width: 50%;
+        width: 60%;
+        
+
     }
 
     .about-banner p {
         font-size: 15px;
         padding: 10px;
-        text-align: center;
+        text-align: left;
     }
 
-    .about-banner h1 {
+    .about-banner h4 {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
     }
 
@@ -2346,17 +2244,266 @@ padding-bottom: 50px;
     color: #777777;
 
 }
-
-
-
-
-
-
-
-
-
 .product-main{
     width: 100%;
     display: block;
     justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-about {
+    padding: 30px 90px 30px 90px;
+
+}
+
+.main-about h4 {
+    width: 80%;
+    text-align: left;
+    /* font-style: italic; */
+    font-size: 50px;
+    font-family: "Ohno Blazeface 12 Point";
+
+}
+
+.main-about p {
+    font-size: 16px;
+    word-spacing: 5px;
+    font-weight: bolder;
+    font-family: 'Rajdhani', sans-serif;
+       color: #4d4057;
+}
+
+@media screen and (max-width: 750px) {
+    .main-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-about h1 {
+        font-size: 30px;
+        padding: 20px 0 40px 0;
+    }
+}
+
+
+
+
+
+.about{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+@media screen and (max-width:750px){
+    .about{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-imgs1{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .about-imgs2{
+        width: 90%;
+    }
+}
+
+.about-imgs1 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width:49%;
+    display: flex;
+    flex-direction: column;
+}
+.about-imgs2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+.text1 h4{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+}
+.text1 p{
+    padding-bottom: 50px;
+}
+.text2 h4 {
+
+    font-family: "Ohno blazeface 12 Point";
+}
+.text2 p{
+    font-family: 'Rajdhani', sans-serif;
+    
+}
+/* .about-imgs img {
+
+    width: 40%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about-imgs-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+        justify-content: space-around;
+    align-items: top;
+    text-align: left;
+    padding-bottom: 100px;
+
+}
+
+.text1 {
+    font-family: monospace;
+    font-style: italic;
+    width: 47%;
+}
+
+.text1 img {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.text1 h1 {
+    font-weight: bolder;
+    padding: 10px 0 30px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif\;
+}
+
+.text2 {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    width: 47%;
+} */
+
+
+
+/* .social-demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+} */
+
+.social-demo h1 {
+    padding-bottom: 20px;
+
+}
+
+.social-demo p span {
+    color: #f26527;
+}
+
+.social-demo p {
+    padding-bottom: 20px;
+}
+
+.SocialImgs-demo{
+    position: relative; 
+    padding-bottom: 90%;
+}
+.SocialImgs-demo img{
+    position: absolute ;
+     width: 20%; 
+     height: 20%; 
+     object-fit: cover;    
+     top: 0 ; 
+     border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social {
+    text-align: left;
+    width: 100%;
+}
+
+.SocialImgs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.SocialImgs .image-wrapper {
+    width: 100%;
+    /* Adjust this value to control the spacing */
+    position: relative;
+    padding-bottom: 20%;
+    /* overflow: hidden; */
+}
+
+.SocialImgs .image-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    .SocialImgs .image-wrapper{
+        width: 100%;
+        padding-bottom: 100%;
+    }
+    .SocialImgs {
+        width: 100%;
+        padding-bottom: 100%;
+        flex-direction: column;
+    }
+
+    .SocialImgs img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
