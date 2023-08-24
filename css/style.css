@@ -3025,6 +3025,7 @@ details[open] .range {
 .upbeet-discription {
     width: 40%;
     background-color: #fdf5f1;
+    border-radius: 20px;
 }
 
 .upbeet-discription button {
@@ -3126,4 +3127,237 @@ details[open] .range {
 
 .Product-Checkout p a:target {
     text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.upbeet {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10px;
+    justify-self: center;
+    margin: 50px auto;
+
+}
+
+.upbeet-variant {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 10%;
+    padding-left: 40px;
+
+}
+
+
+
+.upbeet-variant-img {
+    padding-top: 100%;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    border: 1px solid #e4e4e4;
+}
+
+
+.Variant-btn {
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.3s;
+}
+
+
+.Variant-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Variant-btn:focus {
+    outline: none;
+}
+
+
+
+.Variant-btn:hover {
+    background-color: #fdf5f1;
+
+}
+
+
+.upbeet-variant-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+
+}
+
+.upbeet-main-prod {
+    flex: 1;
+}
+
+
+
+.Prod-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 70%;
+    padding-bottom: 0%;
+    position: relative;
+    /* overflow: hidden; */
+    height: 0px;
+
+}
+
+.Prod-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+
+}
+
+.upbeet-discp {
+    width: 40%;
+    background-color: #fdf5f1;
+}
+
+
+
+
+
+
+
+
+#review-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+
+.upbeet-discp h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.upbeet-discp p {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    word-spacing: 5px;
+    color: #777;
+    padding-bottom: 15px;
+}
+
+
+#description {
+    background-color: #fdf5f1;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+#review {
+    background-color: #fdf5f1;
+
+}
+
+#r-from {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, display 0s ease 0.3s;
+
+}
+
+#r-from:target {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, display 0s ease 0s;
+}
+
+.check-review {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.check-review button {
+    border-radius: 0px;
+
+}
+
+.star-box {
+    display: flex;
+    text-align: left;
+    /* margin-right: 60px; */
+}
+
+.Review-Form {
+    width: 80%;
+    text-align: center;
+}
+
+.rating-box .stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.check-review-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

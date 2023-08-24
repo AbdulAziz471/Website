@@ -111,10 +111,6 @@
     <div style=" width: 100%;
     height: 0.5px; 
     background-color: rgb(224, 224, 224); "></div>
-
-
-
-
     <div class="upbeet">
 
         <div class="upbeet-variant">
@@ -181,70 +177,135 @@
     <div class="Product-Checkout">
         <p><a href="#description">Description</a></p>
         <p><a href="#ingredients">Ingredients</a></p>
-        <p><a href="#reviews">Customer Reviews</a></p>
+        <p><a href="#review">Customer Reviews</a></p>
+
     </div>
 
     <div id="description" class="content">
-        <p>Description content goes here.</p>
-        <div class="Pro-img">
-            <img id="Pro-image" src="img/03-PDP_MushRush.webp" alt="">
 
-        </div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
-        </p>
-    </div>
-    <div id="ingredients" class="content">
-        <p>Ingredients content goes here.</p>
-    </div>
-    <div id="reviews" class="content">
-        <p>Customer Reviews content goes here.</p>
-    </div>
+        <div class="upbeet">
+            <div class="upbeet-main-prod">
+                <div class="Prod-img">
+                    <img id="Pro-image" src="img/03-PDP_MushRush.webp" alt="">
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div>
-        <div class="card-variant-discription">
-            <div class="card-variant">
-                <div class="PRODUCT-VARIANT">
-                    <button class="variant-btn
-                    " onclick="changeImage('img/03-PDP_MushRush.webp')">
-                        <img class="Variant-img" src="img/03-PDP_MushRush.webp" alt="Icon 1">
-                    </button>
                 </div>
-                <div class="PRODUCT-VARIANT">
-                    <button class="Variant-btn" onclick="changeImage('img/img2.png')">
-                        <img class="Variant-img" src="img/02_Home_MushRush_13.webp" alt="Product 2">
-                    </button>
-                </div>
-                <div class="PRODUCT-VARIANT">
-                    <button class="Variant-btn" onclick="changeImage('img/img3.webp')">
-                        <img class="Variant-img" src="img/img3.webp" alt="Product 2">
-                    </button>
+            </div>
+            <div class="upbeet-discp">
+                <div style="padding: 40px 20px 20px 20px;">
+                    <h1> UPBEET TWO
+                    </h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the when an unknown printer took a galley of type
+                        and scrambled it to It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially unchanged.
+                    </p>
+                    <br>
+                    <p>
+                        Software like Aldus PageMaker including versions of Lorem Ipsum Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+
                 </div>
 
 
             </div>
         </div>
-
     </div>
-    <div>
-        <div class="Pro-img">
-            <img id="image" src="img/03-PDP_MushRush.webp" alt="">
+    <div id="ingredients" class="content">
+        <p>Ingredients content goes here.</p>
+    </div>
+    <div id="review" class="content">
+        <div style="display: flex;justify-content: center;">
+            <div class="reviews">
+                <h1>Customer Reviews</h1>
+                <div class="check-review">
+                    <div class="star-box">
+                        <div class="stars">
+                            <div style="display: block;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                            <div>
+                                <p style=" font-weight:bolder ; color:  #ffad42;">Be the first to write a review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width:1px; height: 50px; background-color: #f26527;"></div>
+                    <button class="toggle-button" id="toggleReview">Write a Review</button>
+                </div>
+            </div>
+        </div>
+        <div style=" width: 100%;
+            height: 0.5px; 
+            background-color: rgb(224, 224, 224); ">
+        </div>
+        <div id="r-from">
+            <div class="Review-Form">
+                <h1>Write A Review</h1>
+                <p>Rating</p>
+                <div class="check-review-1">
+                    <div class="star-box">
+                        <div class="stars">
+                            <div style="display: block;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Raeview Title <span>(100)</span></p>
+                <input type="text" placeholder="Be Your Review A title">
+                <p>Review</p>
+                <input type="text" placeholder="Write Your Commant Hare ">
+                <p>Picture/Video (Optional)</p>
+                <input type="file" id="fileInput" name="uploadedFile">
+                <div class="dropdown">
+                    <span>Name (displayed publicly like </span>
+                    <button onclick="myFunction()" class="dropbtn">John Smith</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <span>)</span>
+
+                </div>
+                <input type="text" placeholder="Enter Your Name(Public) ">
+
+                <p>Email</p>
+                <input type="text" placeholder="Enter Your Email(Private) ">
+                <div>
+                    <button style=" margin-left: 20px;">Cancel Review</button>
+                    <button style=" margin-left: 20px;   background:transparent; border: 1px
+                    solid #f26527;
+                   color: #f26527; margin-right: 30px;">Submit Review</button>
+
+                </div>
+
+            </div>
+
         </div>
 
-    </div> -->
+    </div>
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div class="footer-content">
@@ -297,6 +358,19 @@
     </footer>
 
     <script>
+
+        const toggleReviewButton = document.getElementById('toggleReview');
+        const reviewForm = document.getElementById('r-from');
+
+        toggleReviewButton.addEventListener('click', () => {
+            if (reviewForm.style.display === 'none') {
+                reviewForm.style.display = 'flex';
+            } else {
+                reviewForm.style.display = 'none';
+            }
+        });
+
+
         document.addEventListener("DOMContentLoaded", () => {
             const productCards = document.querySelectorAll('.card');
 
