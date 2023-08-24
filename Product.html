@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <script src="javascript/script.js" defer></script>
+    <script src="javascript/script.js"></script>
 
     <title> Research </title>
 </head>
@@ -248,7 +248,7 @@
         <div id="r-from">
             <div class="Review-Form">
                 <h1>Write A Review</h1>
-                <p>Rating</p>
+                <p style="font-size: 20px;">Rating</p>
                 <div class="check-review-1">
                     <div class="star-box">
                         <div class="stars">
@@ -263,27 +263,28 @@
                         </div>
                     </div>
                 </div>
-                <p>Raeview Title <span>(100)</span></p>
-                <input type="text" placeholder="Be Your Review A title">
-                <p>Review</p>
-                <input type="text" placeholder="Write Your Commant Hare ">
+                <p>Raeview Title <span style="font-weight: lighter;">(100)</span></p>
+                <div class="review-data">
+                    <input type="text" placeholder="Give Your Review A title">
+                </div>
+                <p>Raeview<span style="font-weight: lighter;">(500)</span></p>
+                <div class="review-data">
+                    <textarea rows="2" cols="60" type="tex" placeholder="Give Your Review A title"></textarea>
+                </div>
                 <p>Picture/Video (Optional)</p>
                 <input type="file" id="fileInput" name="uploadedFile">
-                <div class="dropdown">
-                    <span>Name (displayed publicly like </span>
-                    <button onclick="myFunction()" class="dropbtn">John Smith</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                    <span>)</span>
 
+
+
+                <p>NAME</p>
+                <div class="review-data">
+                    <input type="text" placeholder="Give Your Review A title">
                 </div>
-                <input type="text" placeholder="Enter Your Name(Public) ">
 
-                <p>Email</p>
-                <input type="text" placeholder="Enter Your Email(Private) ">
+                <p>Raeview Title <span style="font-weight: lighter;">(100)</span></p>
+                <div class="review-data">
+                    <input type="text" placeholder="Give Your Review A title">
+                </div>
                 <div>
                     <button style=" margin-left: 20px;">Cancel Review</button>
                     <button style=" margin-left: 20px;   background:transparent; border: 1px
@@ -299,14 +300,36 @@
     </div>
 
 
+    <div class="ma" style="padding-top:40px ; text-align: center; padding-left: 40px; padding-bottom: 60px;">
+        <h1>YOU MIGHT ALSO LIKE...</h1>
+        <div class="card">
+            <div class="PRODUCT-IMG">
+                <a href="Product-List.html"><img src="img/02_Home_MushRush_13.webp" alt="Product 2"
+                        data-original="img/02_Home_MushRush_13.webp" data-hover="img/03-PDP_MushRush.webp"></a>
+            </div>
+            <h2>Product 2</h2>
+            <p>Description of Product 2.</p>
+            <span>
+                <p>Price: $19.99</p>
+            </span>
+            <button>Add To Cart</button>
 
-
-
-
-
-
-
-
+        </div>
+    </div>
+    <div class="announcementBar">
+        <div class="scrollingText">
+            <p><span class="check-mark">&check;</span>NON GMO</p>
+            <p><span class="check-mark">&check;</span>LOW CALORIE</p>
+            <p><span class="check-mark">&check;</span>VEGAN</p>
+            <p><span class="check-mark">&check;</span>NON ASPARTAME</p>
+            <p><span class="check-mark">&check;</span>GLUTEN FREE</p>
+            <p><span class="check-mark">&check;</span>NON GMO</p>
+            <p><span class="check-mark">&check;</span>LOW CALORIE</p>
+            <p><span class="check-mark">&check;</span>VEGAN</p>
+            <p><span class="check-mark">&check;</span>NON ASPARTAME</p>
+            <p><span class="check-mark">&check;</span>GLUTEN FREE</p>
+        </div>
+    </div>
     <footer>
         <div class="footer-content">
 
@@ -356,8 +379,9 @@
 
 
     </footer>
-
     <script>
+
+
 
         const toggleReviewButton = document.getElementById('toggleReview');
         const reviewForm = document.getElementById('r-from');
@@ -365,12 +389,11 @@
         toggleReviewButton.addEventListener('click', () => {
             if (reviewForm.style.display === 'none') {
                 reviewForm.style.display = 'flex';
+
             } else {
                 reviewForm.style.display = 'none';
             }
         });
-
-
         document.addEventListener("DOMContentLoaded", () => {
             const productCards = document.querySelectorAll('.card');
 
@@ -391,8 +414,8 @@
         });
 
 
-        /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -403,15 +426,15 @@ toggle between hiding and showing the dropdown content */
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
+                    var openDropdown = dropdowns[i]; if
+                        (openDropdown.classList.contains('show')) { openDropdown.classList.remove('show'); }
                 }
             }
         }
-
     </script>
+
+
+
 </body>
 
 </html>
