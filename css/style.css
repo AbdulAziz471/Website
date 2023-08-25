@@ -3110,7 +3110,11 @@ details[open] .range {
 .content {
     display: none;
     border-top: 2px solid transparent;
-    /* Add a transparent border initially */
+}
+
+.no-scroll:active-link {
+    text-decoration: underline;
+
 }
 
 .content:target {
@@ -3125,7 +3129,7 @@ details[open] .range {
     font-weight: lighter;
 }
 
-.Product-Checkout p a:target {
+.Product-Checkout p a:focus {
     text-decoration: underline;
 }
 

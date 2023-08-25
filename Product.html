@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <script src="javascript/script.js"></script>
-
     <title> Research </title>
 </head>
 
@@ -175,9 +174,9 @@
 
     </div>
     <div class="Product-Checkout">
-        <p><a href="#description">Description</a></p>
-        <p><a href="#ingredients">Ingredients</a></p>
-        <p><a href="#review">Customer Reviews</a></p>
+        <p><a class="no-scroll" data-target="#description">Description</a></p>
+        <p><a class="no-scroll" data-target="#ingredients">Ingredients</a></p>
+        <p><a class="no-scroll" data-target="#review">Customer Reviews</a></p>
 
     </div>
 
@@ -431,6 +430,41 @@
                 }
             }
         }
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const noScrollLinks = document.querySelectorAll('a.no-scroll');
+
+            noScrollLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+
+                    // Get the target section ID from the link's data-target attribute
+                    const targetId = link.getAttribute('data-target');
+
+                    // Hide all content sections
+                    const contentSections = document.querySelectorAll('.content');
+                    contentSections.forEach(function (section) {
+                        section.style.display = 'none';
+                    });
+
+                    // Show the target section by setting its display property to "block"
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.style.display = 'block';
+                    }
+
+                });
+
+            });
+        });
+
+
+
+
     </script>
 
 
