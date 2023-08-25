@@ -182,10 +182,6 @@ function changeImage(imageSource) {
   const image = document.getElementById('image');
   image.src = imageSource;
 }
-function changeImage(newSrc) {
-  const mainImage = document.getElementById("Pro-image");
-  mainImage.src = newSrc;
-}
 
 
 function openCustomSearch() {
