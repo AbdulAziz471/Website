@@ -314,8 +314,8 @@
     }
 
     #cart {
-        width: 20px;
-        height: 30px;
+        width: 35px;
+        height: auto;
 
 
     }
@@ -403,7 +403,7 @@
     #icons1 {
         display: block;
         width: 20px;
-        height: 20px;
+        height: auto;
         /* padding-right: 20px; */
         margin: 10px;
     }
@@ -411,7 +411,7 @@
     #icons2 {
         display: block;
         width: 20px;
-        height: 20px;
+        height: auto;
 
         margin: 10px;
     }
