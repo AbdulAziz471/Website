@@ -11,9 +11,17 @@ stars.forEach((star, index1) => {
   });
 });
 
-function opencart() {
-  document.getElementById("mySidepanel").style.width = "30%";
 
+function opencart() {
+  const sidePanel = document.getElementById("mySidepanel");
+
+  if (window.innerWidth <= 750) {
+    // If the screen is shrunk (750px or less), set width to 60%
+    sidePanel.style.width = "60%";
+  } else {
+    // If the screen is not shrunk, set width to 30%
+    sidePanel.style.width = "30%";
+  }
 }
 
 function closecart() {

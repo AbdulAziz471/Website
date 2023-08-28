@@ -8,6 +8,20 @@
     .banner-text p {
         font-size: 15px;
     }
+
+    * button {
+        background-color: #f26527;
+        border-radius: 20px;
+        font-size: 12px;
+        padding: 10px;
+        color: white;
+        border: none;
+        transition: border-width 0.3s, box-shadow 0.3s;
+    }
+
+    .sidepanel.shrink {
+        width: 60%;
+    }
 }
 
 /* 2 media Query */
@@ -158,8 +172,10 @@
     .SHOPNOW {
 
         display: flex;
-        flex-direction: row;
+        width: 50%;
+        flex-direction: column;
         justify-content: center;
+
     }
 
     .choice {
@@ -367,7 +383,7 @@
     }
 
     .head img {
-        width: 60px;
+        width: 90px;
         height: auto;
 
     }
@@ -454,9 +470,6 @@
 
 /* 20 media Query */
 @media screen and (max-width: 750px) {
-    .banner {
-        text-align: left;
-    }
 
     .about-banner {
         width: 60%;
@@ -480,7 +493,15 @@
         width: 100%;
         flex-direction: column;
         justify-content: center;
+        text-align: left;
+
     }
+
+    .banner img {
+        margin: 20px
+    }
+
+    ;
 }
 
 /* 21 media Query */
@@ -533,6 +554,4 @@
     }
 }
 
-@media screen and (max-width: 750px ) {
-    
-}
+@media screen and (max-width: 750px) {}

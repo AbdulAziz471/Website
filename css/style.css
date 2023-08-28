@@ -233,20 +233,18 @@ ul a {
 
 
 .sidepanel {
-    width: 0;
+    width: 0%;
     align-items: center;
     overflow-x: hidden;
     position: fixed;
     z-index: 1;
     height: 100%;
-
     top: 0;
     right: 0;
     background-color: #ffffff;
-
     transition: 0.5s;
-    padding-top: 60px;
 }
+
 
 .sidepanel a {
     padding: 8px 8px 8px 32px;
@@ -446,7 +444,7 @@ ul a {
     background-color: transparent;
     border: none;
 }
- 
+
 .product {
     display: flex;
     flex-direction: row;
@@ -517,7 +515,7 @@ ul a {
 .choice {
     padding-bottom: 20px;
 }
- 
+
 
 .banner-2 {
     width: 100%;
@@ -1283,7 +1281,7 @@ main {
     font-size: 20px;
 
 }
- 
+
 .shoping-cart ul {
     width: 100%;
 
@@ -1292,6 +1290,7 @@ main {
 .Account ul li {
     color: #474747;
 }
+
 #icons1 {
     display: none;
 }
@@ -1300,7 +1299,7 @@ main {
 
     display: none;
 }
- 
+
 
 
 
@@ -1889,7 +1888,7 @@ main {
     font-family: 'Rajdhani', sans-serif;
     color: #4d4057;
 }
- 
+
 
 
 
@@ -1902,6 +1901,7 @@ main {
     justify-content: space-between;
 
 }
+
 .about-imgs1 {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -3052,6 +3052,3 @@ details[open] .range {
     font-size: 45px;
 
 }
-
-
-
