@@ -34,6 +34,7 @@
 
 }
 
+
 #addToCart {
     background-color: white;
 }
@@ -69,7 +70,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+
 }
 
 
@@ -81,10 +82,11 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 15px;
+    font-size: 13px;
+    letter-spacing: 1px;
     font-weight: lighter;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+
     /* font-family: 'Anton', sans-serif; */
     color: white;
 }
@@ -130,17 +132,17 @@ header {
 }
 
 
-.header {
+/* .header {
     padding-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: c enter;
     align-items: center;
     padding-left: 30px;
     position: sticky;
 
-}
+} */
 
 .head {
     padding-top: 10px;
@@ -285,6 +287,7 @@ ul a {
 }
 
 .banner-text {
+
     width: 50%;
     position: absolute;
     top: 20%;
@@ -292,9 +295,11 @@ ul a {
     color: black;
     font-size: 50px;
     font-family: "Ohno Blazeface 12 Point";
+
 }
 
 .banner-text h4 {
+
     padding: 0;
     font-size: 60px;
 }
@@ -1207,7 +1212,7 @@ textarea:focus {
 
 .head nav li {
 
-    font-size: 15px;
+    font-size: 16px;
     list-style-type: none;
     margin: 0px 30px;
 }

@@ -31,93 +31,93 @@
 
 <body>
 
+    <div class="custom-search-bar">
+        <div id="customOverlay" class="custom-overlay">
+            <div class="custom-search-form" action="/action_page.php">
+                <div style="border: 1px solid rgb(113, 113, 113); display: flex; flex-direction: row;">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
 
+                </div>
+                <span class="custom-closebtn" onclick="closeCustomSearch()" title="Close Overlay">×</span>
+            </div>
+        </div>
+    </div>
 
+    <div class="AnnouncementBar-Top">
+        <p>SAVE 20% ON MONTHLY GORGIE SUBSCRIPTION</p>
+    </div>
     <header>
-        <div class="custom-search-bar">
-            <div id="customOverlay" class="custom-overlay">
-                <div class="custom-search-form" action="/action_page.php">
-                    <div style="border: 1px solid rgb(113, 113, 113); display: flex; flex-direction: row;">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+        <div class="head">
+
+            <div class="header-navbar-logo">
+                <span id="nav-btn" style=" font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+                </span>
+                <div class="header-logo">
+                    <div class="header-logo-img">
+                        <a href="Home.html"><img src="img/Mush-logo.png" alt=""></a>
 
                     </div>
-                    <span class="custom-closebtn" onclick="closeCustomSearch()" title="Close Overlay">×</span>
-                </div>
-            </div>
-        </div>
+                    <div class="navbar">
+                        <nav>
+                            <a href="Shop.html">
+                                <li>SHOP</li>
+                            </a>
+                            <a href="About.html">
+                                <li>ABOUT</li>
+                            </a>
+                            <a href="Research.html">
+                                <li>REFREASH</li>
+                            </a>
+                            <a href="FAQ's.html">
+                                <li>FAQ</li>
+                            </a>
+                            <a href="Contact.html">
+                                <li>CONTACT US</li>
+                            </a>
 
-        <div class="AnnouncementBar-Top">
-            <p>SAVE 20% ON MONTHLY GORGIA SUSBSCRIPTIONS</p>
-        </div>
+                        </nav>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="Shop.html">SHOP</a>
+                            <a href="About.html">ABOUT</a>
+                            <a href="Research.html">RESEARCH</a>
+                            <a href="FAQ's.html">FAQ'S</a>
+                            <a href="Contact.html">CONTACT</a>
 
-
-        <div class="head">
-            <span id="nav-btn" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
-            <a href="Home.html"><img src="img/7516_Mush_Rush_Logo-1.png" alt=""></a>
-
-            <div class="navbar">
-                <nav>
-                    <a href="Shop.html">
-                        <li>SHOP</li>
-                    </a>
-                    <a href="About.html">
-                        <li>ABOUT</li>
-                    </a>
-                    <a href="Research.html">
-                        <li>REFREASH</li>
-                    </a>
-                    <a href="FAQ's.html">
-                        <li>FAQ'S</li>
-                    </a>
-                    <a href="Contact.html">
-                        <li>CONTACT</li>
-                    </a>
-
-                </nav>
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="Shop.html">SHOP</a>
-                    <a href="About.html">ABOUT</a>
-                    <a href="Research.html">RESEARCH</a>
-                    <a href="FAQ's.html">FAQ'S</a>
-                    <a href="Contact.html">CONTACT</a>
-
-                </div>
-
-            </div>
-            <div class="Account">
-                <div class="shoping-cart">
-                    <ul>
-                        <a href="#" class="custom-search-link" onclick="openCustomSearch()">
-                            <li class="navigation-item">SEARCH</li>
-                            <img src="img/search-icon.png" alt="" id="icons1">
-                        </a>
-                        <a href=" login.html">
-                            <li class="navigation-item">ACCOUNT</li>
-                            <img src="img/user-icon.png" alt="" id="icons2">
-                        </a>
-                        <img id="cart" class="openbtn" onclick="opencart()" src="img/shopping-cart.png" alt="">
-                        <div id="mySidepanel" class="sidepanel">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
-                            <div class="sideBar-cart">
-                                <h1>YOUR CART IS EMPTY</h1>
-                                <button>Countinous Shopping</button>
-                                <h4>Have an account?</h4>
-                                <a href="login.html">Login In <span>to check our faster</span> </a>
-
-                            </div>
                         </div>
 
-                    </ul>
+                    </div>
+
                 </div>
+                <div class="Account">
+                    <div class="shoping-cart">
+                        <ul>
+                            <a href="#" class="custom-search-link" onclick="openCustomSearch()">
+                                <li class="navigation-item">SEARCH</li>
+                                <img src="img/search-icon.png" alt="" id="icons1">
+                            </a>
+                            <a href=" login.html">
+                                <li class="navigation-item">ACCOUNT</li>
+                                <img src="img/user-icon.png" alt="" id="icons2">
+                            </a>
+                            <img id="cart" class="openbtn" onclick="opencart()" src="img/shopping-cart.png" alt="">
+                            <div id="mySidepanel" class="sidepanel">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
+                                <div class="sideBar-cart">
+                                    <h1>YOUR CART IS EMPTY</h1>
+                                    <button>Countinous Shopping</button>
+                                    <h4>Have an account?</h4>
+                                    <a href="login.html">Login In <span>to check our faster</span> </a>
 
+                                </div>
+                            </div>
+
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-
-
-
-
 
         </div>
 
@@ -128,21 +128,44 @@
     <div style=" width: 100%;
     height: 0.5px; 
     background-color: rgb(224, 224, 224); "></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <main>
 
         <div class="bannar-card">
-            <img src="img/a13.jpg" alt="">
+            <img src="img/UOnUIk.png" alt="">
             <div class="banner-text">
-                <h4>PINE APPLE. </h4>
-                <h4>UPBEET.</h4>
-                <h4>CITRUS.</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Ipsum has been.</p>
-                <button> SHOP NOW</button>
+                <div style="padding: 40px 35px;">
+                    <div class="banner-headline">
+                        <h4>PINEAPPLE. </h4>
+                        <h4>UPBEET.</h4>
+                        <h4>CITRUS.</h4>
+
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Ipsum has been.</p>
+                    <button> SHOP NOW</button>
+
+                </div>
             </div>
         </div>
         <div class="announcementBar">
             <div class="scrollingText">
-                <p><span class="check-mark">&check;</span>NON GMO</p>
+                <p><span class="check-mark">&check;</span>NON-GMO</p>
                 <p><span class="check-mark">&check;</span>LOW CALORIE</p>
                 <p><span class="check-mark">&check;</span>VEGAN</p>
                 <p><span class="check-mark">&check;</span>NON ASPARTAME</p>
@@ -152,41 +175,58 @@
                 <p><span class="check-mark">&check;</span>VEGAN</p>
                 <p><span class="check-mark">&check;</span>NON ASPARTAME</p>
                 <p><span class="check-mark">&check;</span>GLUTEN FREE</p>
+            </div>
+        </div>
+        <div class="banner-container">
+            <div class="bannar-card-2">
+                <img src="img/02_Home_MushRush_7.png" alt="">
+                <div class="banner-text-2">
+                    <div class="banner-headline-2">
+                        <h4>MORE ABOUT THE DRINK</h4>
+
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the when an unknown printer took a galley.</p>
+                    <button> READ MORE</button>
+                </div>
             </div>
         </div>
 
-        <div class="bannar-card-2">
-            <img src="img/a12.jpg" alt="">
-            <div class="banner-text-2">
-                <h4>MORE ABOUT THE DRINK</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Ipsum has been.</p>
-                <button> SHOP NOW</button>
-            </div>
-        </div>
         <div class="banner">
-            <img src="img/02_Home_MushRush_8.webp" alt="">
-            <div class="about-banner">
-                <h4>ABOUT MUSHROOMS</h4>
-                <p>
-                    I love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love allah.I
-                    love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love allah.
-                </p>
-                <button> READ MORE</button>
+            <div class="banner-col-1">
+                <img src="img/02_Home_MushRush_8.webp" alt="">
             </div>
+            <div class="banner-col-2">
+                <h4>
+                    ABOUT MUSHROOMS
 
-            <img src="img/02_Home_MushRush_9.webp" alt="">
-            <!-- <img src="img/02_Home_MushRush_10.webp" alt=""> -->
-
-
+                </h4>
+                <p>
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="banner-col-3">
+                <img id="img-1" src="img/02_Home_MushRush_9.webp" alt="">
+                <img id="img-2" src="img/02_Home_MushRush_10.webp" alt="">
+            </div>
         </div>
         <div class="contact">
             <div class="contact-contant">
-                <h4>WANT MORE? OF COURSE, YOU DO! SIGN UP FOR THE DRINKMUSHROOMS AND GET 15% OFF YOUR FIRST ORDER</h4>
-                <p>Stay in the loop with product launches, special deals, and the latest happening at Drinkmush.</p>
+                <div>
+                    <h4>WANT MORE? OF COURSE, YOU DO! SIGN UP FOR THE DRINKMUSHROOMS AND GET 15% OFF YOUR FIRST ORDER.
+                    </h4>
+                    <p>Stay in the loop with product launches, special deals, and the latest happening at Drinkmush.</p>
 
-                <input type="text" placeholder="Enter your Email address">
-                <button> JOIN NOW</button>
-                <div style="width: 100%; height: 2px ; background-color: rgb(106, 106, 106); margin-top: 30px;"> </div>
+                </div>
+                <div style="width: 35%;">
+                    <input type="text" placeholder="Enter your Email address">
+                    <button> JOIN NOW</button>
+                    <div style="width: 100%; height: 1px ; background-color: rgb(106, 106, 106); margin-top: 30px;">
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -205,17 +245,27 @@
             </div>
         </div>
         <div class="product">
-            <div>
+            <div class="Thing_img">
+                <div class="T-img">
+                    <img id="image" src="img/03-PDP_MushRush.webp" alt="">
+                </div>
+                <div
+                    style=" background-color: transparent; font-size: 11px ;text-align: center; display: block; color: #777;">
+                    <p style="font-family: 'Rajdhani', sans-serif; padding-top: 20px;">FDA Disclaimer: The statements
+                        made on our website
+                        have not been evaluated by the Food and Drug
+                        Administration</p>
+
+                </div>
 
             </div>
-            <div class="Thing_img">
-                <img id="image" src="img/03-PDP_MushRush.webp" alt="">
-            </div>
+
             <div class="product-detail">
                 <div class="detail">
                     <h1>UPBEET</h1>
-                    <p>IT's very cool Product.IT's very cool Product.IT's very cool Product.IT's very cool Product.IT's
-                        very cool Product.IT's very cool Product.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.</p>
                     <div class="rating-box">
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
@@ -223,10 +273,10 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <p style=" font-weight:bolder ; color:  #ffad42;">14 Reviews </p>
+                            <p style=" font-weight:bolder ; color:  #f26527;">14 Reviews </p>
                         </div>
                     </div>
-                    <p style=" font-weight:bolder ; color:  #ffad42;">$45.00</p>
+                    <p style=" font-weight:bolder ; color:  #f26527;">$45.00</p>
                     <div class="icon-container">
                         <button class="icon-button" onclick="changeImage('img/img2.png')">
                             <img class="icon" src="img/img2.png" alt="Icon 1">
@@ -235,44 +285,39 @@
                             <img class="icon" src="img/03-PDP_MushRush.webp" alt="Icon 2">
                         </button>
                     </div>
-                    <div class="choice">
+                    <!-- <div class="choice">
                         <input type="radio" id="html" name="fav_language" value="HTML">
                         <label for="html">ONE TIME PURCHASE $38.00</label><br>
                         <input type="radio" id="css" name="fav_language" value="CSS">
                         <label for="css">SUBSCRIBE AND SAVE 20% $30.40</label><br>
 
-                    </div>
+                    </div> -->
                     <div class="SHOPNOW">
                         <div class="counter">
                             <span class="down" onClick='decreaseCount(event, this)'>-</span>
                             <input type="text" value="1" readonly>
                             <span class="up" onClick='increaseCount(event, this)'>+</span>
                         </div>
-                        <button style="    background: white; border: 1px
-                         solid #f26527;
-                        color: #f26527; margin-right: 30px;">ADD TO CART</button>
-                        <button>SHOP NOW</button>
+                        <button>ADD TO CART</button>
+                        <button style="  margin-left: 5px;   background: transparent; border: 1px
+                        solid #f26527;
+                       color: #f26527; margin-right: 30px;">Buy It Now</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="banner-2">
             <div class="banner-detail-2">
-                <img style="border-radius: 30px;" src="img/02_Home_MushRush_12.webp" alt="">
+                <img style="border-radius: 15px;" src="img/02_Home_MushRush_12.webp" alt="">
                 <div class="about-banner-2">
                     <h1>NOTES FROM FOUNDERS, TO KNOW ABOUT THE TASTE, TEXTURE AND OVERALL EXPERIENCE</h1>
                     <p>
-                        I love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love
-                        allah.I
-                        love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love
-                        allah.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry.
                     </p>
                     <p style="padding-bottom: 30px;">
-                        I love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love
-                        allah.I
-                        love pakistan and i love allah.I love pakistan and i love allah.I love pakistan and i love
-                        allah.
-
+                        Also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
                     </p>
                     <button> READ MORE</button>
                 </div>
