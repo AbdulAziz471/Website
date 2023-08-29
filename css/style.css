@@ -3,14 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Saira+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0%;
     margin: 0%;
     font-family: "Ohno blazeface 12 Point";
-    font-weight: lighter;
+    font-weight: 500;
 
+
+}
+
+*p {
+    font-weight: 500;
 }
 
 
@@ -23,7 +29,8 @@
     color: #f26527;
     font-family: 'Saira Condensed', sans-serif;
     font-weight: bold;
-    letter-spacing: 0.1em;
+    /* letter-spacing: 0.1em; */
+    letter-spacing: 1px;
 }
 
 *h1 {
@@ -31,7 +38,7 @@
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-
+    font-weight: bold;
 }
 
 
@@ -41,15 +48,14 @@
 
 * button {
     background-color: #f26527;
-    border-radius: 20px;
-    font-size: 15px;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    border-radius: 100px;
+    font-size: 16px;
+    padding: 12px 60px;
     color: white;
     border: none;
     transition: border-width 0.3s, box-shadow 0.3s;
-
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
 
 }
 
@@ -59,20 +65,43 @@
 
 }
 
+
+
 button:hover {
     border-width: 4px;
     box-shadow: 0px 3px 6px rgb(90, 90, 90);
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    background-color: white;
 
 }
 
+.header-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-navbar-logo {
+    padding: 0px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-item {
+    font-size: 16px;
+    padding: 0px 15px;
+}
 
 .AnnouncementBar-Top {
     overflow: hidden;
@@ -85,10 +114,12 @@ header {
     font-size: 13px;
     letter-spacing: 1px;
     font-weight: lighter;
-    padding: 10px;
-
-    /* font-family: 'Anton', sans-serif; */
+    padding: 10px 0px 10px 0px;
     color: white;
+}
+
+.AnnouncementBar-Top p {
+    margin: 0px 50px;
 }
 
 .announcementBar {
@@ -99,11 +130,9 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* font-family: 'Anton', sans-serif; */
+    padding: 10px 0px 10px 0px;
     color: white;
 }
 
@@ -111,8 +140,7 @@ header {
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    animation: marquee 20s linear infinite;
-    padding-left: 60px;
+    animation: marquee 50s linear infinite;
     position: relative;
     gap: 50px;
 }
@@ -145,13 +173,13 @@ header {
 } */
 
 .head {
-    padding-top: 10px;
-    width: 95%;
+    position: sticky;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-
+    padding: 0px;
 }
 
 #cart {
@@ -277,53 +305,60 @@ ul a {
 .bannar-card {
     position: relative;
 
-    padding-bottom: 20px;
+    width: 100%;
+    margin-bottom: -6px;
 }
 
 .bannar-card img {
     width: 100%;
-    /* height: 650px; */
+    height: 100%;
 
 }
 
 .banner-text {
-
-    width: 50%;
+    width: 35%;
     position: absolute;
-    top: 20%;
-    left: 10%;
+    padding: 50px;
+    top: 8%;
+    left: 0%;
     color: black;
     font-size: 50px;
     font-family: "Ohno Blazeface 12 Point";
-
 }
 
-.banner-text h4 {
+.banner-headline {
+    padding: 0px 0px 5px 0px;
+}
 
+.banner-headline h4 {
+    font-weight: bolder;
     padding: 0;
-    font-size: 60px;
+    font-size: 62px;
+    line-height: 1;
+    /* word-spacing: 2px; */
 }
 
 .banner-text p {
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 30px;
-    /* font-weight: bold; */
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
     color: #4d4057;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-weight: 500;
+
 }
 
-/* 
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
-
-@media screen and (max-width: 1000px) {
-    .banner-text  {
-        font-size: 30px;
-
-    }
-} */
+    width: 100%;
+}
 
 .bannar-card-2 {
     position: relative;
+    width: 97%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -333,26 +368,36 @@ ul a {
 }
 
 .banner-text-2 {
-    width: 50%;
+    width: 30%;
     position: absolute;
-    top: 20%;
-    left: 10%;
-    font-size: 30px;
-
+    padding: 80px;
+    top: 8%;
+    left: 0%;
     color: white;
     font-size: 50px;
+    font-family: "Ohno Blazeface 12 Point";
 }
+
+.banner-headline-2 {
+    padding: 0px 0px 5px 0px;
+}
+
+.banner-headline-2 h4 {
+    font-weight: bolder;
+    padding: 0;
+    font-size: 62px;
+    line-height: 1;
+    /* word-spacing: 2px; */
+}
+
 
 .banner-text-2 p {
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 25px;
-    /* font-weight: bold; */
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
     color: white;
-}
-
-.banner-text-2 h4 {
-    font-size: 65px;
-    font-weight: bolder;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 
@@ -360,7 +405,6 @@ ul a {
     background-color: white;
     color: #f26527;
     border-radius: 50%;
-
     margin-right: 2px;
 }
 
@@ -368,28 +412,69 @@ ul a {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(253, 237, 218);
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: #fef6f1;
 }
 
-.banner img {
-    width: 30%;
-    height: auto;
+.banner-col-1 {
+    display: flex;
+    width: 32%;
 
 }
 
-.about-banner {
-    /* width: 100%; */
+.banner-col-1 img {
+    width: 100%;
+}
+
+.banner-col-2 {
+    width: 32%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.about-banner h4 {
-    font-size: 40px;
+.banner-col-2 p {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    word-spacing: 2px;
+    line-height: 2;
+}
 
+.banner-col-2 h4 {
+    font-weight: lighter;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Ohno blazeface 12 Point";
+}
+
+.banner-col-3 {
+    width: 30%;
+    position: relative;
+}
+
+#img-1 {
+
+    padding-top: 30px;
+
+    width: 73%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#img-2 {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about-banner {
+    width: 30%;
 }
 
 .about-banner p {
@@ -407,6 +492,7 @@ ul a {
 
 
 .contact {
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -415,26 +501,32 @@ ul a {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+    background-color: #fffbf9;
 
 
 }
 
 .contact-contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 90%;
     text-align: center;
+    align-items: center;
 }
 
 .contact h4 {
     padding-bottom: 30px;
     font-size: 36px;
+    font-weight: 500;
 }
 
 .contact p {
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
     padding-bottom: 30px;
-    font-family: 'Saira Condensed', sans-serif;
-
+    font-family: 'Rajdhani ', sans-serif;
+    color: #9f9f9f;
 }
 
 .contact-contant input {
@@ -457,24 +549,26 @@ ul a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
     background-color: #fef6f1;
-    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 70px;
 
 }
 
 .Thing_img {
     width: 40%;
-    padding-top: 35%;
-    position: relative;
-    overflow: hidden;
-    height: 0;
     background-color: #fdf5f1;
     border-radius: 10px;
     transition: transform 0.5s, filter 0.2s;
 }
 
-.Thing_img img {
+.T-img {
+    position: relative;
+
+    padding-bottom: 100%;
+}
+
+.T-img img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -500,13 +594,18 @@ ul a {
     margin-left: 10px;
     margin-right: 10px;
     padding-bottom: 10px;
+    font-weight: lighter;
+    font-size: 40px;
 }
 
 .detail p {
-    font-size: 25px;
+    font-size: 16px;
     padding: 10px;
     text-align: center;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Rajdhani ', sans-serif;
+    line-height: 2;
+    font-weight: 600;
+    color: #777;
 }
 
 .SHOPNOW {
@@ -539,7 +638,7 @@ ul a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 75%;
 }
 
 .banner-detail-2 img {
@@ -548,7 +647,7 @@ ul a {
 }
 
 .about-banner-2 {
-    padding-left: 20px;
+    padding-left: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -557,16 +656,21 @@ ul a {
 }
 
 .about-banner-2 p {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Saira Condensed', sans-serif;
     /* padding: 30px; */
     line-height: 1.5;
     text-align: center;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: #4d4057;
 }
 
 .about-banner-2 h1 {
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
+    font-weight: 500;
 }
 
 
@@ -580,7 +684,7 @@ ul a {
 
 .social h1 {
     padding-bottom: 20px;
-
+    font-weight: 500;
 }
 
 .social p span {
@@ -588,6 +692,9 @@ ul a {
 }
 
 .social p {
+    font-family: 'Rajdhani ', sans-serif;
+    color: #777777;
+    font-weight: 600;
     padding-bottom: 20px;
 }
 
@@ -688,13 +795,6 @@ footer p {
     border-radius: 100%;
 }
 
-
-
-
-
-
-
-
 .rating-box {
     display: flex;
     justify-content: center;
@@ -707,12 +807,12 @@ footer p {
 .rating-box .stars {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
 }
 
 .stars i {
     color: #e6e6e6;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     transition: color 0.2s ease;
 }
@@ -727,8 +827,8 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #f26527;
-    border-radius: 20px;
+    border: 1px solid black;
+    border-radius: 100px;
     background: white;
     text-align: center;
 
@@ -738,7 +838,8 @@ footer p {
     width: 50px;
     border: none;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
     text-align: center;
     background-color: transparent;
     color: #838383;
@@ -1201,24 +1302,38 @@ textarea:focus {
     display: flex;
     align-items: center;
     color: #4d4057;
+    padding: 0px 22px;
+
 }
 
+
 .head nav {
+    position: sticky;
     align-items: center;
     display: flex;
     flex-direction: row;
     color: #4d4057;
+    font-weight: lighter;
 }
 
 .head nav li {
 
     font-size: 16px;
     list-style-type: none;
-    margin: 0px 30px;
+    padding: 12px 16px;
+
+}
+
+.header-logo-img {
+    margin-top: 0px 0px 0px -7.5px;
+    padding: 7.5px 0px 0px 0px;
+
+
+
 }
 
 .head nav a {
-
+    font-weight: lighter;
     font-size: 15px;
     color: #4d4057;
     text-decoration: none;
@@ -1293,7 +1408,12 @@ main {
 
 }
 
+.Account ul {
+    /* padding: 0px 80px 0px 10px; */
+}
+
 .Account ul li {
+    font-weight: lighter;
     color: #474747;
 }
 
@@ -2861,7 +2981,7 @@ details[open] .range {
 .rating-box .stars {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
 
 }
 

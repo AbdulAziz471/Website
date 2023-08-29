@@ -341,8 +341,16 @@
     }
 }
 
+
+
+
+
+
+
+
+
 /* 14 media Query */
-@media screen and (max-width: 750px) {
+@media screen and (max-width:1000px) {
     .head .navbar li {
 
         margin: 0px 10px;
@@ -353,15 +361,39 @@
         display: none;
     }
 
+    .header-navbar-logo {
+        padding: 0px 32px;
+    }
+
     .nav-btn {
-        width: 33.3%;
+        /* width: 33.3%; */
         display: contents;
     }
 
     #nav-btn {
-        width: 33.3%;
+        /* width: 33.3%; */
         display: flex;
         /* justify-content: right; */
+    }
+
+    #icons1 {
+        display: block;
+        width: 20px;
+        height: auto;
+        /* padding-right: 20px; */
+        margin: 10px;
+    }
+
+    #icons2 {
+        display: block;
+        width: 20px;
+        height: auto;
+
+        margin: 10px;
+    }
+
+    .navigation-item {
+        display: none;
     }
 
     /* 
@@ -373,6 +405,40 @@
         width: 33.3%;
     } */
 }
+
+
+@media screen and (max-width:1025px) {
+    .head .navbar li {
+        font-size: 14px;
+
+    }
+
+    .head .navbar img {
+        display: none;
+    }
+
+    .header-navbar-logo {
+        padding: 0px 32px;
+    }
+
+
+
+    .navigation-item {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+
+    /* 
+    .header-logo {
+        width: 33.3%;
+    }
+
+    .Account {
+        width: 33.3%;
+    } */
+}
+
+
 
 /* 15 media Query */
 @media screen and (max-width: 750px) {
@@ -399,28 +465,7 @@
 }
 
 /* 16 media Query */
-@media screen and (max-width: 750px) {
-    #icons1 {
-        display: block;
-        width: 20px;
-        height: auto;
-        /* padding-right: 20px; */
-        margin: 10px;
-    }
-
-    #icons2 {
-        display: block;
-        width: 20px;
-        height: auto;
-
-        margin: 10px;
-    }
-
-    .navigation-item {
-        display: none;
-    }
-
-}
+@media screen and (max-width: 750px) {}
 
 /* 17 media Query */
 @media screen and (max-width: 1000px) {

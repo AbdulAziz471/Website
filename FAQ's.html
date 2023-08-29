@@ -21,96 +21,99 @@
 <body>
 
 
+  
+    <div class="custom-search-bar">
+        <div id="customOverlay" class="custom-overlay">
+            <div class="custom-search-form" action="/action_page.php">
+                <div style="border: 1px solid rgb(113, 113, 113); display: flex; flex-direction: row;">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+
+                </div>
+                <span class="custom-closebtn" onclick="closeCustomSearch()" title="Close Overlay">×</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="AnnouncementBar-Top">
+        <p>SAVE 20% ON MONTHLY GORGIE SUBSCRIPTION</p>
+    </div>
     <header>
-        <div class="custom-search-bar">
-            <div id="customOverlay" class="custom-overlay">
-                <div class="custom-search-form" action="/action_page.php">
-                    <div style="border: 1px solid rgb(113, 113, 113); display: flex; flex-direction: row;">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+        <div class="head">
+
+            <div class="header-navbar-logo">
+                <span id="nav-btn" style=" font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+                </span>
+                <div class="header-logo">
+                    <div class="header-logo-img">
+                        <a href="Home.html"><img src="img/Mush-logo.png" alt=""></a>
 
                     </div>
-                    <span class="custom-closebtn" onclick="closeCustomSearch()" title="Close Overlay">×</span>
-                </div>
-            </div>
-        </div>
+                    <div class="navbar">
+                        <nav>
+                            <a href="Shop.html">
+                                <li>SHOP</li>
+                            </a>
+                            <a href="About.html">
+                                <li>ABOUT</li>
+                            </a>
+                            <a href="Research.html">
+                                <li>REFREASH</li>
+                            </a>
+                            <a href="FAQ's.html">
+                                <li>FAQ</li>
+                            </a>
+                            <a href="Contact.html">
+                                <li>CONTACT US</li>
+                            </a>
 
-        <div class="AnnouncementBar-Top">
-            <p>SAVE 20% ON MONTHLY GORGIA SUSBSCRIPTIONS</p>
-        </div>
+                        </nav>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="Shop.html">SHOP</a>
+                            <a href="About.html">ABOUT</a>
+                            <a href="Research.html">RESEARCH</a>
+                            <a href="FAQ's.html">FAQ'S</a>
+                            <a href="Contact.html">CONTACT</a>
 
-
-        <div class="head">
-            <span id="nav-btn" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
-            <a href="Home.html"><img src="img/7516_Mush_Rush_Logo-1.png" alt=""></a>
-
-            <div class="navbar">
-                <nav>
-                    <a href="Shop.html">
-                        <li>SHOP</li>
-                    </a>
-                    <a href="About.html">
-                        <li>ABOUT</li>
-                    </a>
-                    <a href="Research.html">
-                        <li>REFREASH</li>
-                    </a>
-                    <a href="FAQ's.html">
-                        <li>FAQ'S</li>
-                    </a>
-                    <a href="Contact.html">
-                        <li>CONTACT</li>
-                    </a>
-
-                </nav>
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="Shop.html">SHOP</a>
-                    <a href="About.html">ABOUT</a>
-                    <a href="Research.html">RESEARCH</a>
-                    <a href="FAQ's.html">FAQ'S</a>
-                    <a href="Contact.html">CONTACT</a>
-
-                </div>
-
-            </div>
-            <div class="Account">
-                <div class="shoping-cart">
-                    <ul>
-                        <a href="#" class="custom-search-link" onclick="openCustomSearch()">
-                            <li class="navigation-item">SEARCH</li>
-                            <img src="img/search-icon.png" alt="" id="icons1">
-                        </a>
-                        <a href=" login.html">
-                            <li class="navigation-item">ACCOUNT</li>
-                            <img src="img/user-icon.png" alt="" id="icons2">
-                        </a>
-                        <img id="cart" class="openbtn" onclick="opencart()" src="img/shopping-cart.png" alt="">
-                        <div id="mySidepanel" class="sidepanel">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
-                            <div class="sideBar-cart">
-                                <h1>YOUR CART IS EMPTY</h1>
-                                <button>Countinous Shopping</button>
-                                <h4>Have an account?</h4>
-                                <a href="login.html">Login In <span>to check our faster</span> </a>
-
-                            </div>
                         </div>
 
-                    </ul>
+                    </div>
+
                 </div>
+                <div class="Account">
+                    <div class="shoping-cart">
+                        <ul>
+                            <a href="#" class="custom-search-link" onclick="openCustomSearch()">
+                                <li class="navigation-item">SEARCH</li>
+                                <img src="img/search-icon.png" alt="" id="icons1">
+                            </a>
+                            <a href=" login.html">
+                                <li class="navigation-item">ACCOUNT</li>
+                                <img src="img/user-icon.png" alt="" id="icons2">
+                            </a>
+                            <img id="cart" class="openbtn" onclick="opencart()" src="img/shopping-cart.png" alt="">
+                            <div id="mySidepanel" class="sidepanel">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
+                                <div class="sideBar-cart">
+                                    <h1>YOUR CART IS EMPTY</h1>
+                                    <button>Countinous Shopping</button>
+                                    <h4>Have an account?</h4>
+                                    <a href="login.html">Login In <span>to check our faster</span> </a>
 
+                                </div>
+                            </div>
+
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-
-
-
-
 
         </div>
 
     </header>
-    <div style=" width: 100%;
+" width: 100%;
     height: 0.5px; 
     background-color: rgb(224, 224, 224); "></div>
     <main>
