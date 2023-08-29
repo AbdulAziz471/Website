@@ -79,7 +79,7 @@ const cardContainer = document.querySelector('.CARDS');
 
           {
             id: 1,
-            imgSrc: "img/02_Home_MushRush_9.webp",
+            imgSrc: "img/07-Research_MushRush_2.png",
             date: "JULLY 07 2023",
             title: "CARD 1",
             content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
@@ -87,7 +87,7 @@ const cardContainer = document.querySelector('.CARDS');
           },
           {
             id: 2,
-            imgSrc: "img/02_Home_MushRush_9.webp",
+            imgSrc: "img/07-Research_MushRush_3.png",
             date: "JULLY 07 2023",
             title: "CARD 2",
             content: "The Quran, also spelled as Koran, is the holy book of Islam, revered by Muslims worldwide as the divine word of God",
