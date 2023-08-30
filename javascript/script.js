@@ -56,19 +56,20 @@ function decreaseCount(a, b) {
   }
 }
 
-
 function toggleElement(elementId, buttonId) {
   var x = document.getElementById(elementId);
   var button = document.getElementById(buttonId);
+  var icon = button.querySelector('i');  // Get the <i> element inside the button
 
   if (x.style.display === "none") {
     x.style.display = "block";
-    button.innerHTML = "-";
+    icon.className = "fa fa-minus-square";  // Change to minus icon when showing
   } else {
     x.style.display = "none";
-    button.innerHTML = "+";
+    icon.className = "fa fa-plus-square";   // Change to plus icon when hiding
   }
 }
+
 
 
 

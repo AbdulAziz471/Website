@@ -60,14 +60,22 @@
 }
 
 .btn-Expanded {
-    border-radius: 10px;
-    padding: 2px 5px 2px 5px;
+    background-color: white;
+    padding: 0;
+    color: white;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
 
 }
 
-
+.btn-Expanded:hover {
+    border-width: 0;
+    box-shadow: none
+}
 
 button:hover {
+
     border-width: 4px;
     box-shadow: 0px 3px 6px rgb(90, 90, 90);
 }
@@ -306,26 +314,30 @@ ul a {
     position: relative;
     width: 100%;
 
-    /* margin-bottom: -6px; */
+    margin-bottom: -6px;
+    object-fit: cover;
 }
 
 .bannar-card img {
-    position: absolute;
+
     width: 100%;
     height: 100%;
-    z-index: -1;
+
 
     object-fit: cover;
 }
 
 .banner-text {
+    position: absolute;
     width: 35%;
     height: 100%;
     padding: 50px;
+    top: 0%;
     left: 0%;
     color: black;
     font-size: 50px;
     font-family: "Ohno Blazeface 12 Point";
+    z-index: 1;
 }
 
 .banner-headline {
@@ -858,14 +870,28 @@ footer p {
     user-select: none;
 }
 
-.main {
+.main-FAQ {
+    width: 85%;
     padding: 10px 90px 30px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
+.main-FAQ h1 {
+    font-size: 40px;
+    padding: 30px 0px 50px 0px;
+}
+
+
+.main {
+    width: 90%;
+    padding: 10px 90px 30px 90px;
 }
 
 .main h1 {
-
-    font-size: 55px;
+    font-size: 60px;
 }
 
 .main p {
@@ -959,7 +985,10 @@ footer p {
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* align-items: center; */
+
+    text-align: left;
+    ;
+
 }
 
 .FAQ h1 {
@@ -968,14 +997,24 @@ footer p {
 
 .contactUs {
 
-    width: 35%;
+    width: 40%;
     padding-bottom: 30px;
 }
 
 .contactUs p {
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    color: #4d4057;
+}
+
+.contactUs a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .questionsAnswer {
@@ -999,12 +1038,13 @@ footer p {
 }
 
 .A {
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
     word-spacing: 3px;
     padding-bottom: 10px;
-    color: #747474;
+    color: #4d4057;
     display: none;
+    font-weight: bolder;
 }
 
 .main-contact-box {
@@ -1367,8 +1407,8 @@ main {
 
 .main h1 {
     text-align: center;
-    padding: 20px 0 60px 0;
-    font-size: 35px;
+    padding: 30px 0 60px 0;
+    font-size: 40px;
 }
 
 .nav-btn {
@@ -2005,7 +2045,7 @@ main {
 
 .main-about {
     margin: 22px 0px 0px 0px;
-    width: 85%;
+    width: 84%;
 
 
 }
@@ -2015,6 +2055,8 @@ main {
     text-align: left;
     font-size: 40px;
     font-family: "Ohno Blazeface 12 Point";
+    padding-top: 5px;
+    padding-bottom: 12px;
 
 }
 
@@ -2026,7 +2068,7 @@ main {
     color: #463d4e;
     font-weight: bolder;
     margin: 0px 0px 16px;
-    line-height: 2;
+    line-height: 1.9;
 }
 
 
@@ -2059,6 +2101,7 @@ main {
 }
 
 .text1 h4 {
+    padding-top: 23px;
     font-family: 'Rajdhani', sans-serif;
     font-size: 30px;
 }
@@ -2068,11 +2111,13 @@ main {
 }
 
 .text2 h4 {
-
+    padding-top: 23px;
+    font-size: 32px;
     font-family: "Ohno blazeface 12 Point";
 }
 
 .text2 p {
+
     font-family: 'Rajdhani', sans-serif;
 
 }
