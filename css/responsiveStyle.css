@@ -1,23 +1,6 @@
 /* 1 media Query */
 @media screen and (max-width: 750px) {
-    .banner-text h4 {
-        font-size: 30px;
 
-    }
-
-    .banner-text p {
-        font-size: 15px;
-    }
-
-    * button {
-        background-color: #f26527;
-        border-radius: 20px;
-        font-size: 12px;
-        padding: 10px;
-        color: white;
-        border: none;
-        transition: border-width 0.3s, box-shadow 0.3s;
-    }
 
     .sidepanel.shrink {
         width: 60%;
@@ -331,10 +314,7 @@
 /* 13 media Query */
 @media screen and (max-width:1000px) {
 
-    .head .navbar li {
-        margin: 0px 5px;
 
-    }
 
     .Account ul a {
         padding-right: 0px;
@@ -347,13 +327,32 @@
 
 
 
+@media screen and (max-width:750px) {
+    #nav-btn {
+        width: 33.3%;
+    }
 
+    .Account {
+        width: 33.3%;
+    }
+}
 
 /* 14 media Query */
 @media screen and (max-width:1000px) {
+    #nav-btn {
+        width: 33.3%;
+    }
+
+    .Account {
+        width: 33.3%;
+    }
+
+    .head .navbar {
+        padding: 0px;
+    }
+
     .head .navbar li {
 
-        margin: 0px 10px;
         display: none;
     }
 
@@ -361,19 +360,13 @@
         display: none;
     }
 
-    .header-navbar-logo {
-        padding: 0px 32px;
-    }
 
     .nav-btn {
-        /* width: 33.3%; */
         display: contents;
     }
 
     #nav-btn {
-        /* width: 33.3%; */
         display: flex;
-        /* justify-content: right; */
     }
 
     #icons1 {
@@ -396,14 +389,6 @@
         display: none;
     }
 
-    /* 
-    .header-logo {
-        width: 33.3%;
-    }
-
-    .Account {
-        width: 33.3%;
-    } */
 }
 
 
@@ -454,9 +439,8 @@
 
     }
 
-    .head .navbar {
-
-        padding-right: 30px;
+    .head .header-logo-img {
+        width: 33.3%;
     }
 
     .head nav li {

@@ -195,24 +195,6 @@ header {
     height: auto;
 }
 
-/* 
-
-.head img {
-    padding-left: 30px;
-    width: 8%;
-   
-}
-
-.head nav li {
-    color: #474747;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-
-
-} */
 
 ul {
     width: 90%;
@@ -310,65 +292,217 @@ ul a {
     font-size: 36px;
 }
 
-.bannar-card {
+.f-banner-container {
     position: relative;
+    overflow: hidden;
     width: 100%;
-
-    margin-bottom: -6px;
-    object-fit: cover;
 }
 
-.bannar-card img {
-
+.f-banner-card {
+    position: relative;
+    display: flex;
     width: 100%;
-    height: 100%;
-
-
-    object-fit: cover;
 }
 
-.banner-text {
-    position: absolute;
-    width: 35%;
-    height: 100%;
-    padding: 50px;
-    top: 0%;
-    left: 0%;
-    color: black;
-    font-size: 50px;
-    font-family: "Ohno Blazeface 12 Point";
+.s-banner-card {
+    position: relative;
+    display: flex;
+    width: 97%;
+
+}
+
+.f-banner-text {
+    padding: 90px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
 }
 
-.banner-headline {
-    padding: 0px 0px 5px 0px;
+.s-banner-text {
+    padding: 90px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
 }
 
-.banner-headline h4 {
+.f-banner-headline {
+    width: 35%;
+    padding: 50px 0px;
+}
+
+.f-banner-headline h4 {
+
     font-weight: bolder;
-    padding: 0;
     font-size: 62px;
     line-height: 1;
-    /* word-spacing: 2px; */
 }
 
-.banner-text p {
+.f-banner-text p {
+    padding-top: 10px;
     font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
     color: #4d4057;
-    line-height: 1.8;
+    line-height: 1.7;
+    font-weight: 400;
+    /* word-spacing: 1px; */
     letter-spacing: 1px;
-    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.f-banner-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/UOnUIk.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
 
 }
 
-.banner-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+@media (max-width: 768px) {
+    .f-banner-card {
+        flex-direction: column-reverse;
+    }
+}
+
+.s-banner-headline {
+    width: 35%;
+    padding: 50px 0px;
+}
+
+.s-banner-headline h4 {
+    color: white;
+    font-weight: bolder;
+    font-size: 62px;
+    line-height: 1;
+}
+
+.s-banner-headline p {
+    color: white;
+}
+
+.s-banner-text p {
+
+    padding-top: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 400;
+
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.s-banner-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/UOnUIk.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+    .s-banner-card {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+.f-banner-container {
+    position: relative;
+    overflow: hidden;
     width: 100%;
 }
+
+.f-banner-card {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.f-banner-text {
+    padding: 90px;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+.s-banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    border-radius: 40px;
+}
+
+.s-banner-headline {
+    width: 35%;
+    padding: 50px 0px;
+}
+
+.s-banner-headline h4 {
+
+    font-weight: bolder;
+    font-size: 62px;
+    line-height: 1;
+}
+
+.s-banner-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/02_Home_MushRush_7.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    border-radius: 20px;
+
+}
+
+
+@media (max-width: 768px) {
+    .s-banner-card {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
 
 .bannar-card-2 {
     position: relative;
